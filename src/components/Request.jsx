@@ -8,16 +8,28 @@ export default function Request({ data }) {
   const [formData, setFormData] = useState({ name: '', email: '', piece: '', story: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate API call
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send');
+      }
+
       setFormData({ name: '', email: '', piece: '', story: '' });
       toast.success(data.toast);
-    }, 1500);
+    } catch {
+      toast.error('Something went wrong. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e) => {
@@ -42,7 +54,7 @@ export default function Request({ data }) {
         "name": "Müjde Doenyas",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://mujdedoenyas.com/og-image.jpg"
+          "url": "https://www.mujdedoenyas.com/og-image.jpg"
         }
       }
     }))
