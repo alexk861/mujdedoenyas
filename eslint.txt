@@ -1,0 +1,10 @@
+﻿
+C:\Users\1\Downloads\Mukde\web-app\src\components\Archive.jsx
+    1:45   error  'Filter' is defined but never used                 no-unused-vars
+   39:35   error  'data' is missing in props validation              react/prop-types
+  128:107  error  'data.subtitle' is missing in props validation     react/prop-types
+  129:93   error  'data.title' is missing in props validation        react/prop-types
+  133:21   error  'data.description' is missing in props validation  react/prop-types
+
+Γ£û 5 problems (5 errors, 0 warnings)
+
