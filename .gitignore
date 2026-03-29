@@ -24,4 +24,16 @@ dist-ssr
 *.sw?
 
 .vercel
+.env
 .env*.local
+
+# Debug & lint output
+build_error*.txt
+eslint.json
+eslint.txt
+lint.json
+lint_output.txt
+lint_report.json
+
+# Agents
+.agents/

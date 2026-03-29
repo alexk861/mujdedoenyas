@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mujdedoenyas.com/sitemap.xml
+Sitemap: https://www.mujdedoenyas.com/sitemap.xml

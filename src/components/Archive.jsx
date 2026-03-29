@@ -45,7 +45,7 @@ export default function Archive({ data }) {
   const [activeTag, setActiveTag] = useState('all');
   const listRef = useRef(null);
 
-  const lang = i18n.language?.startsWith('tr') ? 'tr' : i18n.language?.startsWith('it') ? 'it' : 'en';
+  const lang = (i18n.language && i18n.language.startsWith('tr')) ? 'tr' : (i18n.language && i18n.language.startsWith('it')) ? 'it' : 'en';
 
   const filteredVideos = activeTag === 'all'
     ? videos
@@ -88,7 +88,7 @@ export default function Archive({ data }) {
     if (tag === 'all') {
       return lang === 'tr' ? 'Tümü' : lang === 'it' ? 'Tutti' : 'All';
     }
-    return TAG_LABELS[tag]?.[lang] || TAG_LABELS[tag]?.en || tag;
+    return (TAG_LABELS[tag] && TAG_LABELS[tag][lang]) || (TAG_LABELS[tag] && TAG_LABELS[tag].en) || tag;
   };
 
   const tagCount = (tag) => {
@@ -102,14 +102,14 @@ export default function Archive({ data }) {
     "name": current.title,
     "description": `Piano cover of ${current.title} by Müjde Doenyas.`,
     "thumbnailUrl": getThumbnail(current.videoId),
-    "uploadDate": new Date(current.date).toISOString() || new Date("2024-01-01").toISOString(),
+    "uploadDate": (() => { try { return new Date(current.date || "2024-01-01").toISOString(); } catch { return "2024-01-01T00:00:00.000Z"; } })(),
     "embedUrl": `https://www.youtube.com/embed/${current.videoId}`,
     "publisher": {
       "@type": "Person",
       "name": "Müjde Doenyas",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://mujdedoenyas.com/og-image.jpg"
+        "url": "https://www.mujdedoenyas.com/og-image.jpg"
       }
     }
   };
