@@ -38,7 +38,7 @@ const parseDescription = (desc) => {
 };
 
 export default function Archive({ data }) {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [activeVideo, setActiveVideo] = useState(0);
   const [isEmbedded, setIsEmbedded] = useState(false);
   const [visibleCount, setVisibleCount] = useState(window.innerWidth >= 1024 ? 24 : 12);
@@ -82,11 +82,12 @@ export default function Archive({ data }) {
   const current = filteredVideos[activeVideo] || filteredVideos[0];
   if (!current) return null;
 
-  const parsedDescription = parseDescription(current.description);
+  const rawDescription = t(`archive.videoDescriptions.${current.videoId}`, { defaultValue: current.description || '' });
+  const parsedDescription = parseDescription(rawDescription);
 
   const tagLabel = (tag) => {
     if (tag === 'all') {
-      return lang === 'tr' ? 'Tümü' : lang === 'it' ? 'Tutti' : 'All';
+      return t('archive.ui.tagAll');
     }
     return (TAG_LABELS[tag] && TAG_LABELS[tag][lang]) || (TAG_LABELS[tag] && TAG_LABELS[tag].en) || tag;
   };
@@ -205,7 +206,7 @@ export default function Archive({ data }) {
                   <h3 className="text-xl md:text-2xl font-headline text-on-surface mb-3">{current.title}</h3>
                   <div className="flex flex-wrap gap-4 text-xs font-label tracking-wide text-on-surface-variant">
                     <span className="flex items-center gap-1.5"><Clock className="w-3.5 h-3.5" /> {current.duration}</span>
-                    <span className="flex items-center gap-1.5"><Eye className="w-3.5 h-3.5" /> {current.views} views</span>
+                    <span className="flex items-center gap-1.5"><Eye className="w-3.5 h-3.5" /> {current.views} {t('archive.ui.views')}</span>
                     <span className="flex items-center gap-1.5">{current.date}</span>
                   </div>
                 </div>
@@ -213,7 +214,7 @@ export default function Archive({ data }) {
                   <button
                     onClick={() => setIsEmbedded(false)}
                     className="flex-shrink-0 text-on-surface-variant hover:text-on-surface transition-colors p-2 bg-surface hover:bg-surface-container-high rounded-full ml-4"
-                    title={lang === 'tr' ? 'Videoyu Kapat' : lang === 'it' ? 'Chiudi' : 'Close Video'}
+                    title={t('archive.ui.closeVideo')}
                   >
                     <X className="w-5 h-5" />
                   </button>
@@ -249,7 +250,7 @@ export default function Archive({ data }) {
               className="flex flex-col gap-1 overflow-y-auto max-h-[500px] lg:max-h-none lg:absolute lg:inset-0 pr-1 no-scrollbar"
             >
               <div className="text-xs text-on-surface-variant font-label tracking-widest uppercase mb-2 px-2">
-              {filteredVideos.length} {lang === 'tr' ? 'performans' : lang === 'it' ? 'spettacoli' : 'performances'}
+              {filteredVideos.length} {t('archive.ui.performances')}
             </div>
             {filteredVideos.slice(0, visibleCount).map((video, index) => (
               <div
@@ -300,7 +301,7 @@ export default function Archive({ data }) {
                 onClick={loadMore}
                 className="mt-2 py-3 text-xs font-label uppercase tracking-widest text-primary bg-surface-container hover:bg-surface-container-highest transition-all"
               >
-                {lang === 'tr' ? 'Daha fazla göster' : lang === 'it' ? 'Mostra di più' : 'Show more'} ({filteredVideos.length - visibleCount})
+                {t('archive.ui.showMore')} ({filteredVideos.length - visibleCount})
               </button>
             )}
             </div>

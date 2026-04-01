@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { toast } from 'sonner';
 import { Helmet } from 'react-helmet-async';
-import { recentRequests } from '../data/videos';
+
 import PropTypes from 'prop-types';
 
 export default function Request({ data }) {
@@ -40,9 +40,11 @@ export default function Request({ data }) {
 
   const labels = data.formLabels || {};
 
+  const fulfilledItems = data.fulfilledItems || [];
+
   const requestSchemas = {
     "@context": "https://schema.org",
-    "@graph": recentRequests.map(req => ({
+    "@graph": fulfilledItems.map(req => ({
       "@type": "VideoObject",
       "name": req.title,
       "description": `Piano cover of ${req.title} requested by ${req.requestedBy}.`,
@@ -166,7 +168,7 @@ export default function Request({ data }) {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {recentRequests.map((req, index) => (
+            {fulfilledItems.map((req, index) => (
               <a
                 key={index}
                 href={`https://www.youtube.com/watch?v=${req.videoId}`}
@@ -185,14 +187,14 @@ export default function Request({ data }) {
 
                 <div className="flex flex-col h-full">
                   <span className="text-xs font-label tracking-widest text-on-surface-variant uppercase mb-3 group-hover:text-on-primary/70 transition-colors">
-                    Requested by {req.requestedBy}
+                    {data.requestedByLabel} {req.requestedBy}
                   </span>
                   <h4 className="text-lg font-serif italic text-on-surface group-hover:text-on-primary transition-colors line-clamp-2">
                     {req.title}
                   </h4>
                   
                   <div className="mt-6 flex items-center text-on-surface-variant text-xs font-label tracking-widest uppercase group-hover:text-on-primary transition-colors">
-                    <span>Watch Performance</span>
+                    <span>{data.watchPerformance}</span>
                     <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="square" strokeLinejoin="miter" strokeWidth="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
@@ -224,5 +226,14 @@ Request.propTypes = {
     }),
     fulfilledTitle: PropTypes.string.isRequired,
     fulfilledDescription: PropTypes.string.isRequired,
+    requestedByLabel: PropTypes.string,
+    watchPerformance: PropTypes.string,
+    fulfilledItems: PropTypes.arrayOf(
+      PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        videoId: PropTypes.string.isRequired,
+        requestedBy: PropTypes.string.isRequired,
+      })
+    ),
   }),
 };

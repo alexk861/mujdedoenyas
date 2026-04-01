@@ -6,7 +6,7 @@ import videos from './videos.json';
 
 export const TAG_LABELS = {
   classical: { en: "Classical", tr: "Klasik", it: "Classica" },
-  soundtrack: { en: "Film & Cover", tr: "Film & Cover", it: "Film & Cover" },
+  soundtrack: { en: "Modern Classics", tr: "Modern Klasikler", it: "Classici Moderni" },
   turkish: { en: "Turkish", tr: "Türkçe", it: "Turco" },
 };
 
