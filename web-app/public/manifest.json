@@ -1,0 +1,21 @@
+{
+  "name": "Müjde Doenyas Music",
+  "short_name": "Müjde Doenyas",
+  "description": "Breathtaking acoustic piano covers of classical pieces, epic film soundtracks, and timeless pop songs by Müjde Doenyas.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#09090b",
+  "theme_color": "#09090b",
+  "icons": [
+    {
+      "src": "/musicnote.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/musicnote.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

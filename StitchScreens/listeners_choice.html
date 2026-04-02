@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Choice | The Private Encore</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,300&amp;family=Manrope:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "outline-variant": "#464651",
+                        "primary": "#e9c349",
+                        "on-tertiary-fixed": "#1b1c14",
+                        "inverse-primary": "#735c00",
+                        "surface-container-high": "#2a292f",
+                        "on-surface": "#e4e1e9",
+                        "tertiary": "#c7c7ba",
+                        "secondary": "#c0c1ff",
+                        "on-error": "#690005",
+                        "on-background": "#e4e1e9",
+                        "surface-container-low": "#1b1b20",
+                        "secondary-container": "#3d3f93",
+                        "on-primary-fixed": "#241a00",
+                        "on-primary-container": "#ad8b0e",
+                        "surface-tint": "#e9c349",
+                        "on-primary": "#3c2f00",
+                        "outline": "#918f9d",
+                        "surface-dim": "#131318",
+                        "error-container": "#93000a",
+                        "on-error-container": "#ffdad6",
+                        "tertiary-container": "#26281f",
+                        "on-secondary": "#232479",
+                        "secondary-fixed": "#e1e0ff",
+                        "on-secondary-container": "#b0b2ff",
+                        "surface-variant": "#35343a",
+                        "surface-container-highest": "#35343a",
+                        "tertiary-fixed": "#e3e3d5",
+                        "on-surface-variant": "#c7c5d3",
+                        "on-secondary-fixed": "#0a0565",
+                        "primary-container": "#322600",
+                        "background": "#131318",
+                        "surface": "#131318",
+                        "surface-container-lowest": "#0e0e13",
+                        "secondary-fixed-dim": "#c0c1ff",
+                        "inverse-on-surface": "#303036",
+                        "error": "#ffb4ab",
+                        "on-tertiary": "#2f3128",
+                        "inverse-surface": "#e4e1e9",
+                        "surface-bright": "#39383e",
+                        "primary-fixed-dim": "#e9c349",
+                        "on-tertiary-container": "#8e8f83",
+                        "surface-container": "#1f1f25",
+                        "on-tertiary-fixed-variant": "#46483d",
+                        "tertiary-fixed-dim": "#c7c7ba",
+                        "on-secondary-fixed-variant": "#3b3d90",
+                        "on-primary-fixed-variant": "#574500",
+                        "primary-fixed": "#ffe088"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(27, 27, 32, 0.7);
+            backdrop-filter: blur(12px);
+        }
+        .lacquer-surface {
+            background: radial-gradient(circle at top left, rgba(233, 195, 73, 0.05), transparent 60%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary/30 selection:text-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#131318]/80 backdrop-blur-xl shadow-[0px_24px_48px_rgba(0,0,0,0.15)]">
+<div class="flex justify-between items-center px-6 md:px-12 py-6 w-full max-w-screen-2xl mx-auto">
+<div class="text-2xl font-['Noto_Serif'] italic text-[#e4e1e9] tracking-tight">The Private Encore</div>
+<div class="flex items-center gap-8 md:gap-12">
+<div class="flex items-center gap-6 md:gap-10 font-label text-[10px] md:text-xs uppercase tracking-[0.2em] font-medium">
+<a class="text-[#e4e1e9]/60 hover:text-[#e4e1e9] transition-colors duration-300" href="#">The Stage</a>
+<a class="text-[#e4e1e9]/60 hover:text-[#e4e1e9] transition-colors duration-300" href="#">Archive</a>
+<a class="text-[#e9c349] border-b border-[#e9c349]/30 pb-1" href="#">Choice</a>
+<a class="text-[#e4e1e9]/60 hover:text-[#e4e1e9] transition-colors duration-300" href="#">Request</a>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto lacquer-surface min-h-screen">
+<!-- Hero Section -->
+<header class="mb-20 flex flex-col md:flex-row items-end justify-between gap-8">
+<div class="max-w-2xl">
+<h4 class="font-label text-primary uppercase tracking-[0.3em] text-xs mb-4">Curated Selection</h4>
+<h1 class="font-headline text-5xl md:text-7xl font-light mb-6 leading-tight">
+                    The Listener's <span class="italic">Choice</span>
+</h1>
+<p class="font-body text-on-surface-variant text-lg leading-relaxed max-w-xl">
+                    In our private piano salon, the dialogue between performer and audience is sacred. Vote for the pieces that will shape our next digital encounter.
+                </p>
+</div>
+<div class="flex flex-col items-end hidden md:flex">
+<div class="text-right border-r border-primary/20 pr-6">
+<span class="block text-3xl font-headline italic">24h</span>
+<span class="block font-label text-xs uppercase tracking-widest text-on-surface/40">Remaining to vote</span>
+</div>
+</div>
+</header>
+<!-- Main Voting Grid -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Featured Poll (Bento Style) -->
+<div class="lg:col-span-8 space-y-12">
+<div class="glass-card rounded-xl overflow-hidden border border-white/5 transition-all duration-500 hover:border-primary/20">
+<div class="relative h-64 overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent z-10"></div>
+<img class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-1000" data-alt="close-up of polished black piano keys with dramatic golden stage lighting and soft bokeh in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD51jfsVMxFSN5XCUDbziYuM1tqCv9jajANegHpkrzUlplH5Z8fUkT_qvmJWYEXIq9wvvIa1HepAjeIQe7UfZxPyG-Tp_6L6kJ3KfXPA9WeAvS0AlucbNoky2u8zi8oZ-eYQiSFRhguFHJNqDPzSVsqtmD52_2ZR63ZKB_VeDevujk74uRF2GYGASum4q4d_MtUBHUDY1fR__mOD9eiQ1k2t5kWupIv_RuNp6idhxSTqZ9_kpkReQvmd8eEMUrcfRoddOjW0qDDNOg"/>
+<div class="absolute bottom-6 left-8 z-20">
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-[10px] uppercase tracking-widest font-bold mb-3 inline-block border border-primary/20">Current Feature</span>
+<h2 class="font-headline text-3xl text-on-surface">The Nocturnal Suite</h2>
+</div>
+</div>
+<div class="p-8 md:p-10 bg-surface-container-low">
+<p class="font-body text-on-surface/70 mb-10 leading-relaxed italic">
+                            "I am searching for a piece that captures the hushed transition from twilight to midnight. Each of these compositions explores the vulnerability of the quiet hours."
+                        </p>
+<!-- Poll Options -->
+<div class="space-y-6">
+<!-- Option 1 -->
+<div class="group relative">
+<div class="flex justify-between items-end mb-2">
+<div class="space-y-1">
+<h3 class="font-headline text-xl text-on-surface group-hover:text-primary transition-colors">Chopin: Nocturne in C-sharp Minor</h3>
+<p class="text-xs text-on-surface/40 font-body">Selected for its haunting introspective depth.</p>
+</div>
+<span class="font-label text-sm text-primary">42%</span>
+</div>
+<div class="w-full h-[6px] bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[42%] rounded-full transition-all duration-1000 ease-out"></div>
+</div>
+<button class="absolute -right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:right-0 transition-all duration-300 font-label text-[10px] uppercase tracking-tighter text-primary px-4 py-2 border border-primary/20 rounded-md hover:bg-primary hover:text-on-primary">Cast Vote</button>
+</div>
+<!-- Option 2 -->
+<div class="group relative">
+<div class="flex justify-between items-end mb-2">
+<div class="space-y-1">
+<h3 class="font-headline text-xl text-on-surface group-hover:text-primary transition-colors">Debussy: Clair de lune</h3>
+<p class="text-xs text-on-surface/40 font-body">An impressionist masterpiece of light and shadow.</p>
+</div>
+<span class="font-label text-sm text-primary">31%</span>
+</div>
+<div class="w-full h-[6px] bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[31%] rounded-full transition-all duration-1000 ease-out"></div>
+</div>
+<button class="absolute -right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:right-0 transition-all duration-300 font-label text-[10px] uppercase tracking-tighter text-primary px-4 py-2 border border-primary/20 rounded-md hover:bg-primary hover:text-on-primary">Cast Vote</button>
+</div>
+<!-- Option 3 -->
+<div class="group relative">
+<div class="flex justify-between items-end mb-2">
+<div class="space-y-1">
+<h3 class="font-headline text-xl text-on-surface group-hover:text-primary transition-colors">Satie: Gymnopédie No. 1</h3>
+<p class="text-xs text-on-surface/40 font-body">Minimalist purity for a tranquil encore.</p>
+</div>
+<span class="font-label text-sm text-primary">27%</span>
+</div>
+<div class="w-full h-[6px] bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[27%] rounded-full transition-all duration-1000 ease-out"></div>
+</div>
+<button class="absolute -right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:right-0 transition-all duration-300 font-label text-[10px] uppercase tracking-tighter text-primary px-4 py-2 border border-primary/20 rounded-md hover:bg-primary hover:text-on-primary">Cast Vote</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Polls Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Minor Poll 1 -->
+<div class="glass-card p-8 border border-white/5 rounded-xl hover:border-primary/10 transition-colors">
+<span class="font-label text-[10px] uppercase tracking-widest text-primary mb-4 block">The Technique Series</span>
+<h3 class="font-headline text-2xl mb-4 leading-snug">Rachmaninoff vs. Liszt</h3>
+<p class="font-body text-sm text-on-surface/50 mb-8 leading-relaxed">
+                            Should we explore the thunderous power of Sergei or the transcendental virtuosity of Franz?
+                        </p>
+<div class="flex flex-col gap-4">
+<button class="w-full py-4 px-6 text-left border border-outline-variant/30 rounded-lg hover:border-primary/50 transition-all group flex justify-between items-center">
+<span class="font-headline italic text-on-surface group-hover:text-primary transition-colors">Prelude in G Minor</span>
+<span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity">check</span>
+</button>
+<button class="w-full py-4 px-6 text-left border border-outline-variant/30 rounded-lg hover:border-primary/50 transition-all group flex justify-between items-center">
+<span class="font-headline italic text-on-surface group-hover:text-primary transition-colors">La Campanella</span>
+<span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity">check</span>
+</button>
+</div>
+</div>
+<!-- Minor Poll 2 -->
+<div class="glass-card p-8 border border-white/5 rounded-xl hover:border-primary/10 transition-colors">
+<span class="font-label text-[10px] uppercase tracking-widest text-primary mb-4 block">The Seasonal Spirit</span>
+<h3 class="font-headline text-2xl mb-4 leading-snug">Winter's Breath</h3>
+<p class="font-body text-sm text-on-surface/50 mb-8 leading-relaxed">
+                            Which piece best represents the crystalline chill of a private winter salon?
+                        </p>
+<div class="flex flex-col gap-4">
+<button class="w-full py-4 px-6 text-left border border-outline-variant/30 rounded-lg hover:border-primary/50 transition-all group flex justify-between items-center">
+<span class="font-headline italic text-on-surface group-hover:text-primary transition-colors">Vivaldi: Winter (Adagio)</span>
+<span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity">check</span>
+</button>
+<button class="w-full py-4 px-6 text-left border border-outline-variant/30 rounded-lg hover:border-primary/50 transition-all group flex justify-between items-center">
+<span class="font-headline italic text-on-surface group-hover:text-primary transition-colors">Glass: Metamorphosis II</span>
+<span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity">check</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Side Sidebar: Stats & Insights -->
+<aside class="lg:col-span-4 space-y-12">
+<div class="space-y-8">
+<div>
+<h4 class="font-headline text-lg mb-6 pb-2 border-b border-white/5">Listener Insights</h4>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">groups</span>
+<div>
+<p class="font-label text-xs uppercase tracking-tighter text-on-surface/40 mb-1">Total Listeners Voting</p>
+<p class="font-headline text-2xl italic">1,248 Members</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">auto_awesome</span>
+<div>
+<p class="font-label text-xs uppercase tracking-tighter text-on-surface/40 mb-1">Top Requested Genre</p>
+<p class="font-headline text-2xl italic">Romanticism</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-high/40 p-8 rounded-xl border border-white/5">
+<h4 class="font-headline text-xl mb-4">The Curator's Note</h4>
+<p class="font-body text-sm text-on-surface/60 leading-relaxed italic mb-6">
+                            "Every vote is a note in the symphony of our community. I read your comments and your preferences carefully to ensure each encore feels personally tailored to your collective soul."
+                        </p>
+<p class="font-label text-[10px] uppercase tracking-widest text-primary">Mujde Doenyas</p>
+</div>
+<div>
+<h4 class="font-headline text-lg mb-6 pb-2 border-b border-white/5">Next Live Session</h4>
+<div class="relative group cursor-pointer overflow-hidden rounded-xl h-48">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="abstract artistic shot of a concert hall with dramatic shadows and golden highlights on velvet seats" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_juGtr9jT5Ck5rTqgLerUfzuzGRiNYczE702R_-iYeSuSnh2h594Fb80z1PHLVtKO4ktMwlzsTeCFxQ5jXArnRXDSQnVk7RD-85OaGrL-UemiFo_2gB0XZ2JrAZeZHYXkoBLYJvN54xrKnLYTeELjqTChDnKO3pUnLbdTiGW5hdrkwq7IB6cU41M32mtjSd5G0C6Y9S2QnAhsEuMXtbT6o4DpIJnhMZry_BSixdwuaPmBNgClrzhIuSYb43k3a9e-B2B0hmoQ9IA"/>
+<div class="absolute inset-0 bg-black/60 flex flex-col items-center justify-center p-6 text-center">
+<span class="font-label text-[10px] uppercase tracking-widest text-primary mb-2">Friday, Oct 24</span>
+<h5 class="font-headline text-lg leading-tight">The Midnight Sonata Live</h5>
+<button class="mt-4 text-[10px] font-label uppercase tracking-widest border border-primary/40 px-4 py-2 hover:bg-primary hover:text-on-primary transition-colors">Set Reminder</button>
+</div>
+</div>
+</div>
+</div>
+</aside>
+</section>
+<!-- Aesthetic Request Section -->
+<section class="mt-32 pt-24 border-t border-white/5 text-center max-w-3xl mx-auto">
+<h2 class="font-headline text-4xl mb-6 italic">Don't see your favorite?</h2>
+<p class="font-body text-on-surface/60 text-lg mb-10 leading-relaxed">
+                If the piece you long to hear isn't listed, our patrons are invited to submit personal requests for the next curation cycle.
+            </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-md font-label uppercase text-xs tracking-[0.2em] font-bold hover:scale-105 transition-transform duration-300">Submit Request</button>
+<button class="text-on-surface px-8 py-4 border border-outline-variant/30 rounded-md font-label uppercase text-xs tracking-[0.2em] hover:bg-white/5 transition-colors">Join Membership</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-12 mt-24 border-t border-white/5 bg-[#131318]">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 w-full">
+<div class="font-['Manrope'] text-xs uppercase tracking-[0.2em] text-[#e4e1e9]/40">
+                © 2024 The Private Encore. An Invitation Only Experience.
+            </div>
+<div class="flex gap-8">
+<a class="font-['Manrope'] text-xs uppercase tracking-[0.2em] text-[#e4e1e9]/40 hover:text-[#e4e1e9] transition-colors" href="#">Terms</a>
+<a class="font-['Manrope'] text-xs uppercase tracking-[0.2em] text-[#e4e1e9]/40 hover:text-[#e4e1e9] transition-colors" href="#">Privacy</a>
+<a class="font-['Manrope'] text-xs uppercase tracking-[0.2em] text-[#e4e1e9]/40 hover:text-[#e4e1e9] transition-colors" href="#">Membership</a>
+</div>
+</div>
+</footer>
+</body></html>

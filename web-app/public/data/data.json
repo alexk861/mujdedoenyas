@@ -1,0 +1,51 @@
+{
+  "hero": {
+    "subtitle": "A Private Encore",
+    "title": "The Private Salon of",
+    "highlight": "Müjde Doenyas.",
+    "description": "An intimate sanctuary where melodies breathe. Join me in a curated exploration of the keys, from timeless classics to modern echoes."
+  },
+  "bio": {
+    "title": "The Pulse of the Keys",
+    "content": [
+      "What began as a childhood curiosity evolved into a lifelong dialogue with the piano. For me, the salon is not a stage for performance, but a room for conversation. Whether it's the mathematical precision of Bach or the nostalgic pop resonance of ABBA, every piece is a memory shared.",
+      "My journey is driven by the belief that music is most powerful when it's personal. This private digital salon is my way of inviting you into that space—where we listen, request, and celebrate the melodies that define our lives."
+    ]
+  },
+  "choices": {
+    "title": "What should I play next?",
+    "description": "The salon is open to your influence. Cast your vote for the upcoming performance.",
+    "options": [
+      {
+        "id": "c1",
+        "title": "Interstellar Main Theme",
+        "category": "Contemporary",
+        "percentage": 42
+      },
+      {
+        "id": "c2",
+        "title": "Nocturne Op. 9 No. 2",
+        "category": "Classical",
+        "percentage": 28
+      },
+      {
+        "id": "c3",
+        "title": "Dancing Queen (Acoustic)",
+        "category": "Pop Transcription",
+        "percentage": 30
+      }
+    ]
+  },
+  "request": {
+    "title": "Suggest a Piece",
+    "description": "Is there a melody that haunts your thoughts or brings you peace? I would be honored to learn and share your favorites in the next session."
+  },
+  "footer": {
+    "copyright": "© 2024 Müjde Doenyas. A Private Encore.",
+    "links": [
+      {"name": "YouTube", "url": "#"},
+      {"name": "Instagram", "url": "#"},
+      {"name": "Community & Requests", "url": "#"}
+    ]
+  }
+}

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MUJDE DOENYAS | The Private Salon</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "background": "#131318",
+                        "tertiary-fixed": "#e3e3d5",
+                        "inverse-on-surface": "#303036",
+                        "error": "#ffb4ab",
+                        "on-primary-container": "#ad8b0e",
+                        "tertiary": "#c7c7ba",
+                        "on-surface-variant": "#c7c5d3",
+                        "on-error-container": "#ffdad6",
+                        "surface": "#131318",
+                        "primary": "#e9c349",
+                        "error-container": "#93000a",
+                        "on-tertiary-fixed": "#1b1c14",
+                        "on-error": "#690005",
+                        "inverse-surface": "#e4e1e9",
+                        "outline": "#918f9d",
+                        "surface-dim": "#131318",
+                        "secondary-container": "#3d3f93",
+                        "on-background": "#e4e1e9",
+                        "on-primary": "#3c2f00",
+                        "primary-fixed-dim": "#e9c349",
+                        "on-secondary-container": "#b0b2ff",
+                        "primary-fixed": "#ffe088",
+                        "surface-bright": "#39383e",
+                        "primary-container": "#322600",
+                        "outline-variant": "#464651",
+                        "surface-container": "#1f1f25",
+                        "surface-container-low": "#1b1b20",
+                        "on-primary-fixed-variant": "#574500",
+                        "on-surface": "#e4e1e9",
+                        "on-secondary": "#232479",
+                        "surface-container-highest": "#35343a",
+                        "on-tertiary-fixed-variant": "#46483d",
+                        "surface-tint": "#e9c349",
+                        "tertiary-container": "#26281f",
+                        "on-tertiary-container": "#8e8f83",
+                        "on-secondary-fixed": "#0a0565",
+                        "tertiary-fixed-dim": "#c7c7ba",
+                        "surface-variant": "#35343a",
+                        "on-tertiary": "#2f3128",
+                        "surface-container-high": "#2a292f",
+                        "secondary-fixed": "#e1e0ff",
+                        "on-secondary-fixed-variant": "#3b3d90",
+                        "secondary": "#c0c1ff",
+                        "on-primary-fixed": "#241a00",
+                        "inverse-primary": "#735c00",
+                        "secondary-fixed-dim": "#c0c1ff",
+                        "surface-container-lowest": "#0e0e13"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #131318;
+            color: #e4e1e9;
+            font-family: 'Manrope', sans-serif;
+            overflow-x: hidden;
+        }
+        .serif-italic { font-family: 'Noto Serif', serif; font-style: italic; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-background text-on-background">
+<!-- TopNavBar -->
+<nav class="bg-slate-950/80 backdrop-blur-xl docked full-width top-0 sticky z-50 shadow-2xl shadow-slate-950/50">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif italic text-primary tracking-tighter">MUJDE DOENYAS</div>
+<div class="flex gap-6 md:gap-12 items-center">
+<a class="text-primary border-b border-primary/30 pb-1 font-semibold font-serif italic tracking-tight text-sm md:text-lg hover:scale-105 transition-transform duration-300" href="#stage">THE STAGE</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-serif italic tracking-tight text-sm md:text-lg hover:scale-105 transition-transform duration-300" href="#archive">ARCHIVE</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-serif italic tracking-tight text-sm md:text-lg hover:scale-105 transition-transform duration-300" href="#choice">CHOICE</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-serif italic tracking-tight text-sm md:text-lg hover:scale-105 transition-transform duration-300" href="#request">REQUEST</a>
+</div>
+<button class="hidden md:block bg-primary text-on-primary px-6 py-2 rounded-md font-semibold hover:scale-105 active:scale-95 transition-all duration-300">
+            Enter Salon
+        </button>
+</div>
+</nav>
+<main>
+<!-- The Stage (Hero) -->
+<section class="relative h-[921px] flex items-center overflow-hidden" id="stage">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-60 scale-105" data-alt="cinematic wide shot of a woman playing a grand piano in a moonlit, minimalist high-end architectural space with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhp5jRt3i0xzAc5labtIDyUMcGpvjopkUdEVzvZhmu6INswYdlhGccvr0ZjCIXMQKQHa8iaHZ0xQNWYLo169BtaP6hbdhKEomWTxVCYtqPwCkCsG2uyHO17NlCbxcHwRo5MndBzEBZBqTRstMzuS29U-IKE6U5hkHvnm_NPnGAWox6FzZWh-F4vPFKaBFZPHFAPKqidzQMkL7Hab-2PH1Svm96YRln7HBcwVtwOJqfABAI76yUGsq96-w90rpva4AoK2nIItk8ptE"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent"></div>
+</div>
+<div class="container mx-auto px-8 relative z-10">
+<div class="max-w-3xl">
+<span class="text-primary font-label tracking-[0.3em] uppercase text-xs mb-4 block">A Private Encore</span>
+<h1 class="text-6xl md:text-8xl font-headline font-bold text-on-surface leading-[1.1] mb-8 tracking-tighter">
+                    The Private Salon of <span class="text-primary italic">Mujde Doenyas.</span>
+</h1>
+<p class="text-xl md:text-2xl font-body text-on-surface-variant max-w-xl font-light leading-relaxed">
+                    An intimate sanctuary where melodies breathe. Join me in a curated exploration of the keys, from timeless classics to modern echoes.
+                </p>
+</div>
+</div>
+<div class="absolute bottom-12 right-12 hidden md:block">
+<div class="flex items-center gap-4 text-primary">
+<span class="w-24 h-[1px] bg-primary"></span>
+<span class="font-label uppercase text-[10px] tracking-widest">Scroll to Begin</span>
+</div>
+</div>
+</section>
+<!-- Musical Journey (Bio) -->
+<section class="py-32 bg-surface-container-low relative overflow-hidden">
+<div class="container mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+<div class="md:col-span-5 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="close-up of pianist hands resting on ivory keys with golden hour sunlight hitting the polished wood finish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8Nx-fODdzmQ44mRJd-m-B60DRe-FkXlGmZIJnXIkhcuQvWkqNs0u9ltWkbZc4VixBt8BNwfUOkxFEdLLrzOEc1WshcLLex9MxqkrsqkGbbCqj38mzOGK7fNzabwt6F0F_okbZlAxAl8DwUelV_sA2EU6rhQzN4_g_VB8Cu3HJXnngtV_vcz9ClP1IpmF5UkftV8LLWfxcFdJ87kaUTGra6dJicvSe0SsaxKw-gKi-XV2WIptl5X_QdaaXYMswha1yYmErtD4XsUc"/>
+</div>
+<div class="absolute -bottom-8 -right-8 w-48 h-48 bg-primary/10 backdrop-blur-3xl rounded-full -z-10"></div>
+</div>
+<div class="md:col-span-7 flex flex-col gap-8">
+<h2 class="text-4xl md:text-5xl font-headline italic text-on-surface">The Pulse of the Keys</h2>
+<div class="space-y-6 text-lg text-on-surface-variant font-light leading-relaxed">
+<p>
+                            What began as a childhood curiosity evolved into a lifelong dialogue with the piano. For me, the salon is not a stage for performance, but a room for conversation. Whether it's the mathematical precision of <span class="text-primary font-semibold">Bach</span> or the nostalgic pop resonance of <span class="text-primary font-semibold">ABBA</span>, every piece is a memory shared.
+                        </p>
+<p>
+                            My journey is driven by the belief that music is most powerful when it's personal. This private digital salon is my way of inviting you into that space—where we listen, request, and celebrate the melodies that define our lives.
+                        </p>
+</div>
+<div class="pt-4">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="auto_awesome">auto_awesome</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Performance Archive -->
+<section class="py-32 bg-surface" id="archive">
+<div class="container mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-baseline mb-16 gap-4">
+<h2 class="text-5xl font-headline text-on-surface">Performance Archive</h2>
+<div class="flex gap-4">
+<span class="px-6 py-2 rounded-full bg-surface-container-high text-primary text-sm font-label tracking-wide">Classical</span>
+<span class="px-6 py-2 rounded-full border border-outline-variant text-on-surface-variant text-sm font-label tracking-wide">Contemporary</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Video Card 1 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-video rounded-xl overflow-hidden mb-6 bg-surface-container-highest">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500" data-alt="dramatic low light photo of a piano keyboard with a single spotlight illuminating the center keys" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY8yNKXK7O1VNjoh8HqCI8jKq8VpwD9t28DZzSVW7xAnXcs1cuNvwfmTuvevoVfhlDNvfxkHynts1OWLLhVUILOjcBrL6VLKH-HLmvBdXCpfV881_eilLsfCJh2fnF4FSLpvumEnIwr4QSqX5ZcmD-6qEqCTJgmAHQbmW2M6uKAWjyAy7qcQlH2bsh6_xJ_s_dn6k7El4nsBDKpQNEobD7kJRYh8IZRYxdAFVjwFrGAQJWWGHMYUhapmJFSxaOeUcVmhzUcszSV7k"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-16 h-16 rounded-full bg-primary/90 flex items-center justify-center text-on-primary shadow-xl group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="play_arrow" data-weight="fill">play_arrow</span>
+</div>
+</div>
+</div>
+<h3 class="text-xl font-headline text-on-surface mb-2">The Heart Asks Pleasure First</h3>
+<p class="text-sm text-on-surface-variant font-label uppercase tracking-widest">Michael Nyman</p>
+</div>
+<!-- Video Card 2 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-video rounded-xl overflow-hidden mb-6 bg-surface-container-highest">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500" data-alt="blurry background of a concert hall with warm bokeh lights and a grand piano silhouette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDToV8Hj_ttgnjGx_AL_6Fn6inYOS12Y99KuqR9hwN0ohuvPGDnLXz2DAFIMA73TUCf71su9_DzrW89Io59MpmZLJ-kByP92vsYNeWDvJGx3UXZiE5gk8QPAtE8Q3U-kJJap_7lSk6qEzs7TiNxK2oho8npAdMPR7-UPA5zu3XyHdnVYZxCxxpuizcHsoJSjYtEK8w25Q8k2MGBchfkKp_WUZHQp-G_oOgtnYRy0c5Qi5g_iffijcbIeV-SRU914b7co0gZzb9yR3g"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-16 h-16 rounded-full bg-primary/90 flex items-center justify-center text-on-primary shadow-xl group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="play_arrow" data-weight="fill">play_arrow</span>
+</div>
+</div>
+</div>
+<h3 class="text-xl font-headline text-on-surface mb-2">Gladiator (Now We Are Free)</h3>
+<p class="text-sm text-on-surface-variant font-label uppercase tracking-widest">Hans Zimmer</p>
+</div>
+<!-- Video Card 3 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-video rounded-xl overflow-hidden mb-6 bg-surface-container-highest">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500" data-alt="abstract artistic shot of musical sheet notes with a soft golden glow overlay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdbd-O1-RdTRLM3N-kbjS9eWMsEVXo7m0g0W_XldfKMRd_CcVS4phHgEFF_TnNuCWmd-UDq7aqwEl9vqJ0Sb3T8JNqXe4Wbj1pB-Ae1kZp6uO7qi7F_hdl16m9BAY6s0ROIEYlRbETJshFsNUyfgIAlttQfTovvwxdP_ZLyqSGvXLvQtaNxBrMr8NXWS4F5iVh-Owlx_7u5nqMTr1rYzj86qgAf63iudPQn6JVIDp2q_mrvVE3qa1XJiTVJq3mPBKQMa4DaT7LZvw"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-16 h-16 rounded-full bg-primary/90 flex items-center justify-center text-on-primary shadow-xl group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="play_arrow" data-weight="fill">play_arrow</span>
+</div>
+</div>
+</div>
+<h3 class="text-xl font-headline text-on-surface mb-2">Clair de Lune</h3>
+<p class="text-sm text-on-surface-variant font-label uppercase tracking-widest">Claude Debussy</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Listener's Choice (Poll) -->
+<section class="py-32 bg-surface-container-high relative" id="choice">
+<div class="container mx-auto px-8">
+<div class="max-w-4xl mx-auto text-center mb-16">
+<h2 class="text-4xl md:text-5xl font-headline italic mb-4">What should I play next?</h2>
+<p class="text-on-surface-variant">The salon is open to your influence. Cast your vote for the upcoming performance.</p>
+</div>
+<div class="max-w-2xl mx-auto space-y-4">
+<button class="w-full group bg-surface p-6 rounded-xl flex items-center justify-between border border-outline-variant/20 hover:border-primary/50 transition-all duration-300">
+<div class="flex flex-col items-start">
+<span class="text-lg font-semibold text-on-surface">Interstellar Main Theme</span>
+<span class="text-xs font-label text-on-surface-variant uppercase tracking-widest">Contemporary</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-primary font-body font-bold">42%</span>
+<div class="w-10 h-10 rounded-full border border-primary/30 flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-sm" data-icon="check">check</span>
+</div>
+</div>
+</button>
+<button class="w-full group bg-surface p-6 rounded-xl flex items-center justify-between border border-outline-variant/20 hover:border-primary/50 transition-all duration-300">
+<div class="flex flex-col items-start">
+<span class="text-lg font-semibold text-on-surface">Nocturne Op. 9 No. 2</span>
+<span class="text-xs font-label text-on-surface-variant uppercase tracking-widest">Classical</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-primary font-body font-bold">28%</span>
+<div class="w-10 h-10 rounded-full border border-primary/30 flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-sm" data-icon="check">check</span>
+</div>
+</div>
+</button>
+<button class="w-full group bg-surface p-6 rounded-xl flex items-center justify-between border border-outline-variant/20 hover:border-primary/50 transition-all duration-300">
+<div class="flex flex-col items-start">
+<span class="text-lg font-semibold text-on-surface">Dancing Queen (Acoustic)</span>
+<span class="text-xs font-label text-on-surface-variant uppercase tracking-widest">Pop Transcription</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-primary font-body font-bold">30%</span>
+<div class="w-10 h-10 rounded-full border border-primary/30 flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-sm" data-icon="check">check</span>
+</div>
+</div>
+</button>
+</div>
+</div>
+</section>
+<!-- Request a Melody -->
+<section class="py-32 bg-background relative overflow-hidden" id="request">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-primary/5 -skew-x-12 transform translate-x-1/2"></div>
+<div class="container mx-auto px-8 relative z-10">
+<div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div>
+<h2 class="text-5xl font-headline mb-8 text-on-surface">Suggest a Piece</h2>
+<p class="text-xl text-on-surface-variant font-light leading-relaxed mb-8">
+                        Is there a melody that haunts your thoughts or brings you peace? I would be honored to learn and share your favorites in the next session.
+                    </p>
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 rounded-full border border-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="music_note">music_note</span>
+</div>
+<span class="font-label text-sm uppercase tracking-widest text-on-surface">Requests processed weekly</span>
+</div>
+</div>
+<form class="bg-surface-container p-10 rounded-xl shadow-2xl border border-outline-variant/10">
+<div class="space-y-6">
+<div>
+<label class="block text-xs font-label uppercase tracking-widest text-on-surface-variant mb-2">The Piece Name</label>
+<input class="w-full bg-surface-container-highest border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 text-on-surface py-3 transition-colors" placeholder="e.g. Moonlight Sonata" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-label uppercase tracking-widest text-on-surface-variant mb-2">Composer or Artist</label>
+<input class="w-full bg-surface-container-highest border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 text-on-surface py-3 transition-colors" placeholder="e.g. Beethoven" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-label uppercase tracking-widest text-on-surface-variant mb-2">Why this song?</label>
+<textarea class="w-full bg-surface-container-highest border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 text-on-surface py-3 transition-colors" placeholder="Share a brief memory or reason..." rows="3"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-md font-bold text-sm uppercase tracking-widest hover:scale-[1.02] active:scale-95 transition-all shadow-lg shadow-primary/20" type="submit">
+                            Send Suggestion
+                        </button>
+</div>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-950 w-full py-12 border-t border-slate-900">
+<div class="flex flex-col items-center gap-8 w-full px-4">
+<div class="text-lg font-serif text-slate-200">MUJDE DOENYAS</div>
+<div class="flex gap-8 md:gap-12">
+<a class="text-slate-500 hover:text-primary transition-colors font-sans uppercase tracking-[0.2em] text-[10px]" href="#">YouTube</a>
+<a class="text-slate-500 hover:text-primary transition-colors font-sans uppercase tracking-[0.2em] text-[10px]" href="#">Instagram</a>
+<a class="text-slate-500 hover:text-primary transition-colors font-sans uppercase tracking-[0.2em] text-[10px]" href="#">Community &amp; Requests</a>
+</div>
+<div class="text-slate-400 font-sans uppercase tracking-[0.2em] text-[10px]">
+            © 2024 Mujde Doenyas. A Private Encore.
+        </div>
+<div class="mt-4 opacity-30">
+<span class="material-symbols-outlined text-4xl" data-icon="keyboard">keyboard</span>
+</div>
+</div>
+</footer>
+</body></html>

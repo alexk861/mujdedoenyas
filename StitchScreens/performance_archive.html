@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400&amp;family=Manrope:wght@200;300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "outline-variant": "#464651",
+              "primary": "#e9c349",
+              "on-tertiary-fixed": "#1b1c14",
+              "inverse-primary": "#735c00",
+              "surface-container-high": "#2a292f",
+              "on-surface": "#e4e1e9",
+              "tertiary": "#c7c7ba",
+              "secondary": "#c0c1ff",
+              "on-error": "#690005",
+              "on-background": "#e4e1e9",
+              "surface-container-low": "#1b1b20",
+              "secondary-container": "#3d3f93",
+              "on-primary-fixed": "#241a00",
+              "on-primary-container": "#ad8b0e",
+              "surface-tint": "#e9c349",
+              "on-primary": "#3c2f00",
+              "outline": "#918f9d",
+              "surface-dim": "#131318",
+              "error-container": "#93000a",
+              "on-error-container": "#ffdad6",
+              "tertiary-container": "#26281f",
+              "on-secondary": "#232479",
+              "secondary-fixed": "#e1e0ff",
+              "on-secondary-container": "#b0b2ff",
+              "surface-variant": "#35343a",
+              "surface-container-highest": "#35343a",
+              "tertiary-fixed": "#e3e3d5",
+              "on-surface-variant": "#c7c5d3",
+              "on-secondary-fixed": "#0a0565",
+              "primary-container": "#322600",
+              "background": "#131318",
+              "surface": "#131318",
+              "surface-container-lowest": "#0e0e13",
+              "secondary-fixed-dim": "#c0c1ff",
+              "inverse-on-surface": "#303036",
+              "error": "#ffb4ab",
+              "on-tertiary": "#2f3128",
+              "inverse-surface": "#e4e1e9",
+              "surface-bright": "#39383e",
+              "primary-fixed-dim": "#e9c349",
+              "on-tertiary-container": "#8e8f83",
+              "surface-container": "#1f1f25",
+              "on-tertiary-fixed-variant": "#46483d",
+              "tertiary-fixed-dim": "#c7c7ba",
+              "on-secondary-fixed-variant": "#3b3d90",
+              "on-primary-fixed-variant": "#574500",
+              "primary-fixed": "#ffe088"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-card {
+        background: rgba(53, 52, 58, 0.7);
+        backdrop-filter: blur(16px);
+      }
+      .lacquer-gradient {
+        background: radial-gradient(circle at center, #322600 0%, #131318 100%);
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/30">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-[#131318]/80 backdrop-blur-xl shadow-[0px_24px_48px_rgba(0,0,0,0.15)]">
+<nav class="flex justify-between items-center px-12 py-6 w-full max-w-screen-2xl mx-auto">
+<div class="text-2xl font-['Noto_Serif'] italic text-[#e4e1e9] tracking-tight">
+                The Private Encore
+            </div>
+<div class="hidden md:flex items-center gap-12 font-['Noto_Serif'] font-light tracking-wide">
+<a class="text-[#e4e1e9]/60 hover:text-[#e4e1e9] transition-colors duration-300 hover:scale-105 transition-transform duration-200" href="#">The Stage</a>
+<a class="text-[#e9c349] border-b border-[#e9c349]/30 pb-1 hover:scale-105 transition-transform duration-200" href="#">Archive</a>
+<a class="text-[#e4e1e9]/60 hover:text-[#e4e1e9] transition-colors duration-300 hover:scale-105 transition-transform duration-200" href="#">Choice</a>
+<a class="text-[#e4e1e9]/60 hover:text-[#e4e1e9] transition-colors duration-300 hover:scale-105 transition-transform duration-200" href="#">Request</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-[#e4e1e9]/60 hover:text-[#e9c349] transition-colors">
+<span class="material-symbols-outlined text-2xl">account_circle</span>
+</button>
+</div>
+</nav>
+</header>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-screen-2xl mx-auto">
+<!-- Hero Section / Header -->
+<section class="mb-20 flex flex-col md:flex-row items-end justify-between gap-8">
+<div class="max-w-3xl">
+<span class="font-label text-xs uppercase tracking-[0.3em] text-primary mb-4 block">Mujde Doenyas' Digital Salon</span>
+<h1 class="font-headline text-5xl md:text-7xl font-light leading-tight mb-6">Performance Archive</h1>
+<p class="font-body text-lg text-on-surface-variant max-w-xl leading-relaxed">
+                    A curated anthology of private recitals, captured in high fidelity. Explore the dialogue between classical precision and contemporary soul.
+                </p>
+</div>
+<div class="w-full md:w-auto">
+<div class="flex items-center gap-4 bg-surface-container-high px-6 py-3 rounded-xl border border-white/5">
+<span class="material-symbols-outlined text-on-surface-variant">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-on-surface placeholder:text-on-surface-variant/40 font-body w-full md:w-64" placeholder="Search composer, title..." type="text"/>
+</div>
+</div>
+</section>
+<!-- Category Filter -->
+<section class="mb-16 flex flex-wrap gap-4">
+<button class="px-8 py-2 bg-primary text-on-primary rounded-full font-label text-sm tracking-wider hover:scale-105 transition-transform">All Works</button>
+<button class="px-8 py-2 bg-surface-container-high text-on-surface rounded-full font-label text-sm tracking-wider border border-white/5 hover:bg-surface-container-highest transition-colors">Classical</button>
+<button class="px-8 py-2 bg-surface-container-high text-on-surface rounded-full font-label text-sm tracking-wider border border-white/5 hover:bg-surface-container-highest transition-colors">Contemporary</button>
+<button class="px-8 py-2 bg-surface-container-high text-on-surface rounded-full font-label text-sm tracking-wider border border-white/5 hover:bg-surface-container-highest transition-colors">Original Improvisations</button>
+</section>
+<!-- Bento Grid Gallery -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Featured Performance (Classical) -->
+<div class="md:col-span-8 group cursor-pointer">
+<div class="relative overflow-hidden rounded-xl aspect-video mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close-up of elegant female hands playing a polished black grand piano in a dimly lit, atmospheric studio with warm bokeh lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRT7nMmMSaWggpR0rMdIaTfKUVlVrO90Xirqy-lLPXR67pBEyY_MnXldMxfLAcTCUDPCRUuAwVu1eEIthVGPLO4IXvICqFhu1hYCFsv7EYHSia1em02U5kGoDHFcOUITWM-dSP7FG5i7bX33suSYuVQySK85mFzhwiqPs7G4AACZ1GyxBBwXLeO7tX4ExFdI0UINlXcshuYxxB_Savp7FB1oWXijhXmhKyT4qtsalFFXlsp2UhnhN-NZ_w1QTi7F4W5u4F_IX7008"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent opacity-60"></div>
+<!-- Play Overlay -->
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="w-20 h-20 bg-primary/90 text-on-primary rounded-full flex items-center justify-center backdrop-blur-md">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<!-- Tag -->
+<div class="absolute top-6 left-6">
+<span class="bg-surface-container-highest/80 backdrop-blur-md text-on-surface px-4 py-1.5 rounded-full text-xs font-label tracking-widest uppercase">Classical</span>
+</div>
+</div>
+<div>
+<h3 class="font-headline text-3xl font-light mb-2 group-hover:text-primary transition-colors">Nocturne in C-sharp Minor</h3>
+<p class="font-body text-on-surface-variant tracking-wide">Frédéric Chopin • 128K views • Recorded Dec 2023</p>
+</div>
+</div>
+<!-- Side Card 1 (Contemporary) -->
+<div class="md:col-span-4 group cursor-pointer">
+<div class="relative overflow-hidden rounded-xl aspect-square mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Minimalist modern apartment with a grand piano by a large window overlooking a city at twilight with soft blue tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCR4_NuPGcOHcYmD9_hALA7nAxPIgAHIgwHpQBKxJlHtafGh4Iq-BjYUdyPn22GUR6YUo7vZGjznvWC0bY0tb3TNCpJDozHX8eJQAYuR8CkGxPK0M0WtggaXNiZO5EuE-QPE-tGjqPy9-4dNTA4aczZNsm0pf4bFq47-h4id0vgcECUv-jwecwnaUfk1qLNqAR1SeHcJN4DtVnBNSa73dMgjMpxTeMdWJ7d5sWkadcm6bq_o5NU8V6-amsfHr6GKTtjk_zFNcj3d7w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent opacity-40"></div>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="w-16 h-16 bg-primary/90 text-on-primary rounded-full flex items-center justify-center backdrop-blur-md">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="absolute top-6 left-6">
+<span class="bg-surface-container-highest/80 backdrop-blur-md text-on-surface px-4 py-1.5 rounded-full text-xs font-label tracking-widest uppercase">Contemporary</span>
+</div>
+</div>
+<div>
+<h3 class="font-headline text-2xl font-light mb-2 group-hover:text-primary transition-colors">Experience</h3>
+<p class="font-body text-on-surface-variant tracking-wide">Ludovico Einaudi</p><p class="font-body text-sm text-on-surface-variant/70 tracking-wide mt-1">85K views • Recorded Nov 2023</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="md:col-span-4 group cursor-pointer">
+<div class="relative overflow-hidden rounded-xl aspect-[4/5] mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Artistic high-contrast shot of piano keys and hammers with dramatic shadows and golden light reflecting off the wood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCS82THqMGbJm7Pbli0BHN3knYwF8O9nbrvThKNjOtKirc4zNIlgNcH5FjKWbZ8EH6Sb8E7SdxW3JiTxA2bKSDcn6GHxME8eFkHxlRrOvYPDuaww-sTsnyU6eqvQMvd5dwD9bY_VXs2vdRKY15RMa1QQ45rxGjuGUjaY_e_LFXQgJzmThxJvjljNtgbZan8X4s0C_q-f9udFCtUZYysshNR7B4jGPkwbwpcGk0Efb9ZstnYfSc-tRYQbj-FO63Hr_zSd7i7BRzlcFA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent opacity-40"></div>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="w-16 h-16 bg-primary/90 text-on-primary rounded-full flex items-center justify-center backdrop-blur-md">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="absolute top-6 left-6">
+<span class="bg-surface-container-highest/80 backdrop-blur-md text-on-surface px-4 py-1.5 rounded-full text-xs font-label tracking-widest uppercase">Classical</span>
+</div>
+</div>
+<div>
+<h3 class="font-headline text-2xl font-light mb-2 group-hover:text-primary transition-colors">Clair de Lune</h3>
+<p class="font-body text-on-surface-variant tracking-wide">Claude Debussy</p><p class="font-body text-sm text-on-surface-variant/70 tracking-wide mt-1">210K views • Recorded Jan 2024</p>
+</div>
+</div>
+<!-- Card 4 (Horizontal contemporary) -->
+<div class="md:col-span-8 group cursor-pointer">
+<div class="relative overflow-hidden rounded-xl aspect-[16/9] mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Sheet music on a piano stand with a single rose, soft warm vintage lighting creating a nostalgic mood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzsE5sNyvgxQaaEsTDYBNNb59RxvHkZbafQU7uptc4B-_ETGrRwEcJPSUW8u4zbaP0vovvLEz2DFHtIUfc36jMrMR2V2ljMT2wToA0vG_Ca50V91ZlyG4cjpKLjtqeSg7LDZnBZy0YSPpqD1LghtD1fMLtUMj-RDVUGcGYb0EE1FICHyxwke120g4dh8EE0K4FKzf_P1zhfVJCyDTEq7e-HaxQSXZRh78fMxnUgLGcw_sZOFJakAAswB5DCazUwCPRNKEX3MOIjOo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent opacity-40"></div>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="w-20 h-20 bg-primary/90 text-on-primary rounded-full flex items-center justify-center backdrop-blur-md">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="absolute top-6 left-6">
+<span class="bg-surface-container-highest/80 backdrop-blur-md text-on-surface px-4 py-1.5 rounded-full text-xs font-label tracking-widest uppercase">Contemporary</span>
+</div>
+</div>
+<div>
+<h3 class="font-headline text-3xl font-light mb-2 group-hover:text-primary transition-colors">Merry-Go-Round of Life</h3>
+<p class="font-body text-on-surface-variant tracking-wide">Joe Hisaishi • 54K views • Studio Session • Recorded Feb 2024</p>
+</div>
+</div>
+</section>
+<!-- Newsletter / Invitation Section -->
+<section class="mt-32 relative overflow-hidden rounded-3xl lacquer-gradient py-20 px-8 md:px-20 border border-white/5">
+<div class="relative z-10 max-w-2xl">
+<h2 class="font-headline text-4xl md:text-5xl font-light mb-8 text-on-surface">Join the Inner Circle</h2>
+<p class="font-body text-lg text-on-surface-variant/80 mb-10 leading-relaxed">
+                    Be the first to receive notifications of new encore recordings and upcoming private salon invitations. 
+                </p>
+<form class="flex flex-col md:flex-row gap-4">
+<input class="bg-surface-container-lowest border-none focus:ring-1 focus:ring-primary rounded-lg px-6 py-4 flex-grow text-on-surface placeholder:text-on-surface-variant/30" placeholder="Email Address" type="email"/>
+<button class="bg-primary text-on-primary px-10 py-4 rounded-lg font-label text-sm uppercase tracking-widest hover:scale-105 transition-transform" type="submit">Request Access</button>
+</form>
+</div>
+<!-- Decorative Element -->
+<div class="absolute -right-20 -bottom-20 w-96 h-96 bg-primary/5 rounded-full blur-[100px]"></div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-12 mt-24 bg-[#131318] border-t border-white/5">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 w-full">
+<div class="font-['Manrope'] text-xs uppercase tracking-[0.2em] text-[#e4e1e9]/40">
+                © 2024 The Private Encore. An Invitation Only Experience.
+            </div>
+<div class="flex gap-12 font-['Manrope'] text-xs uppercase tracking-[0.2em]">
+<a class="text-[#e4e1e9]/40 hover:text-[#e4e1e9] transition-colors" href="#">Terms</a>
+<a class="text-[#e4e1e9]/40 hover:text-[#e4e1e9] transition-colors" href="#">Privacy</a>
+<a class="text-[#e4e1e9]/40 hover:text-[#e4e1e9] transition-colors" href="#">Membership</a>
+</div>
+<div class="flex gap-6">
+<a class="text-[#e4e1e9]/40 hover:text-[#e9c349] transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">public</span>
+</a>
+<a class="text-[#e4e1e9]/40 hover:text-[#e9c349] transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">music_note</span>
+</a>
+</div>
+</div>
+</footer>
+</body></html>

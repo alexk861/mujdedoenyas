@@ -1,0 +1,12 @@
+[ 3308959ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:5174/src/data/videos.js?t=1774782324706:0
+[ 3308960ms] [ERROR] [hmr] Failed to reload /src/components/Archive.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5174/@vite/client:175
+[ 3308960ms] [ERROR] [hmr] Failed to reload /src/components/Request.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5174/@vite/client:175
+[ 3731045ms] [ERROR] [hmr] Failed to reload /src/components/Archive.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5174/@vite/client:175
+[ 3744548ms] [ERROR] [hmr] Failed to reload /src/components/Archive.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5174/@vite/client:175
+[ 3786301ms] [ERROR] [hmr] Failed to reload /src/components/Archive.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5174/@vite/client:175
+[ 4743851ms] [ERROR] Warning: Failed %s type: %s%s prop Invalid prop `data.options[0].id` of type `string` supplied to `Choice`, expected `number`. 
+    at Choice (http://localhost:5174/src/components/Choice.jsx?t=1774783759592:21:34)
+    at main
+    at div
+    at App (http://localhost:5174/src/App.jsx?t=1774783200723:30:17)
+    at _a (http://localhost:5174/node_modules/.vite/deps/react-helmet-async.js?v=728de496:627:5) @ http://localhost:5174/node_modules/.vite/deps/chunk-NUMECXU6.js?v=728de496:520
