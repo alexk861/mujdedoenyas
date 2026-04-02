@@ -1,0 +1,178 @@
+﻿commit aed00d932bc2bbd87ae94205b30df0885f6b37d1
+Author: aleksi <k.alexi@gmail.com>
+Date:   Thu Apr 2 09:49:40 2026 +0300
+
+    ≡ƒÄ╣ Sync: 2026-04-02 ΓÇö auto-update videos
+
+ web-app/src/data/videos.json | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 7c8aa136bd9366efac0a4ca0c47166dc15c5332f
+Author: aleksi <k.alexi@gmail.com>
+Date:   Wed Apr 1 22:32:38 2026 +0300
+
+    deploy
+
+ src/components/Archive.jsx |  15 +++---
+ src/components/Request.jsx |  21 ++++++--
+ src/data/videos.js         |   2 +-
+ src/locales/en - Copy.json |  90 ++++++++++++++++++++++++++++++++
+ src/locales/en.json        | 124 +++++++++++++++++++++++++++++++++++----------
+ src/locales/it - Copy.json |  90 ++++++++++++++++++++++++++++++++
+ src/locales/it.json        | 124 +++++++++++++++++++++++++++++++++++----------
+ src/locales/tr - Copy.json |  90 ++++++++++++++++++++++++++++++++
+ src/locales/tr.json        | 108 +++++++++++++++++++++++++++++++--------
+ 9 files changed, 575 insertions(+), 89 deletions(-)
+
+commit f2139ea9b207ac1f276060fc16e5174111b8550c
+Author: aleksi <k.alexi@gmail.com>
+Date:   Wed Apr 1 09:52:42 2026 +0300
+
+    ≡ƒÄ╣ Sync: 2026-04-01 ΓÇö auto-update videos
+
+ web-app/src/data/videos.json | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 1aad4f26e5f80d8180eb45b30c3a4646dbf0ff42
+Author: aleksi <k.alexi@gmail.com>
+Date:   Tue Mar 31 09:23:30 2026 +0300
+
+    ≡ƒÄ╣ Sync: 2026-03-31 ΓÇö auto-update videos
+
+ web-app/src/data/videos.json | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 5a3482231ed1703675cafa2f7cd103dda965718c
+Author: aleksi <k.alexi@gmail.com>
+Date:   Mon Mar 30 09:17:15 2026 +0300
+
+    ≡ƒÄ╣ Sync: 2026-03-30 ΓÇö auto-update videos
+
+ web-app/src/data/videos.json | 371 +++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 371 insertions(+)
+
+commit 329824ab9dce8d2a2947976c7b50428d3898dc36
+Author: aleksi <k.alexi@gmail.com>
+Date:   Sun Mar 29 23:46:45 2026 +0300
+
+    chore: cleanup debug files and update configuration
+
+ .gitignore                   |   12 +
+ .npmrc                       |    1 +
+ api/youtube.js               |   57 ++
+ build_error.txt              |  Bin 2952 -> 0 bytes
+ build_error_utf8.txt         |   61 --
+ eslint.config.js             |    1 +
+ eslint.json                  |  Bin 30546 -> 0 bytes
+ eslint.txt                   |   10 -
+ fetchDescriptions.mjs        |   16 -
+ generate_sitemap.js          |   33 +
+ index.html                   |    8 +-
+ lint.json                    |    1 -
+ lint_output.txt              |  Bin 6300 -> 0 bytes
+ lint_report.json             |  Bin 54182 -> 0 bytes
+ package-lock.json            | 1714 ++++++++++++++++++++++++++++++++++++++++--
+ package.json                 |    2 +
+ public/robots.txt            |    2 +-
+ public/sitemap.xml           |  742 +++++++++++++++++-
+ src/App.jsx                  |   28 +-
+ src/components/Archive.jsx   |    8 +-
+ src/data/videos.js           |  331 +-------
+ vite.config.js               |   19 +-
+ web-app/src/data/videos.json |  371 ---------
+ 23 files changed, 2540 insertions(+), 877 deletions(-)
+
+commit 372469b6507a36a3ce60f027bfc51d8014da18ba
+Author: aleksi <k.alexi@gmail.com>
+Date:   Sun Mar 29 23:23:06 2026 +0300
+
+    fix: switch back to Resend with domain verification + fallback sender
+
+ api/contact.js | 117 ++++++++++++++++++++++++++++++++++++++++++++++-----------
+ 1 file changed, 95 insertions(+), 22 deletions(-)
+
+commit 6a6440e0f9819d8df83a7b9c2351844b2a7eabda
+Author: aleksi <k.alexi@gmail.com>
+Date:   Sun Mar 29 23:15:36 2026 +0300
+
+    fix: switch to Web3Forms for contact form (no domain verification needed)
+
+ api/contact.js | 100 ++++++++++++---------------------------------------------
+ 1 file changed, 21 insertions(+), 79 deletions(-)
+
+commit 228ba464004f6f008a5e95e598ee3e32df3643ed
+Author: aleksi <k.alexi@gmail.com>
+Date:   Sun Mar 29 23:08:16 2026 +0300
+
+    feat: wire up contact form to send real emails via Resend API
+
+ api/contact.js             | 123 +++++++++++++++++++++++++++++++++++++++++++++
+ src/components/Request.jsx |  24 ++++++---
+ 2 files changed, 141 insertions(+), 6 deletions(-)
+
+commit 2920a789f4f7b2d503a33b149d760baa05745e42
+Author: aleksi <k.alexi@gmail.com>
+Date:   Sun Mar 29 22:58:32 2026 +0300
+
+    ≡ƒÄ╣ Sync: 2026-03-29 ΓÇö auto-update videos
+
+ web-app/src/data/videos.json | 371 +++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 371 insertions(+)
+
+commit 9ef0a5fafd2c057997c5e5626b86b589fb1fbb6b
+Author: aleksi <k.alexi@gmail.com>
+Date:   Sun Mar 29 22:48:11 2026 +0300
+
+    feat: add YouTube auto-sync cron job with keyword-based tag classifier
+
+ api/lib/tag-classifier.js | 167 +++++++++++++++++++++
+ api/sync.js               | 300 +++++++++++++++++++++++++++++++++++++
+ src/data/videos.json      | 371 ++++++++++++++++++++++++++++++++++++++++++++++
+ vercel.json               |   8 +
+ 4 files changed, 846 insertions(+)
+
+commit 38a7ec56f3d6559188d5911fa4a353b8371d8d0f
+Author: aleksi <k.alexi@gmail.com>
+Date:   Sun Mar 29 16:13:30 2026 +0300
+
+    Initial commit of Executive Serenity website
+
+ .agents/skills/elegant-writing/SKILL.md |   16 +
+ .gitignore                              |   27 +
+ README.md                               |    8 +
+ build_error.txt                         |  Bin 0 -> 2952 bytes
+ build_error_utf8.txt                    |   61 +
+ eslint.config.js                        |   38 +
+ eslint.json                             |  Bin 0 -> 30546 bytes
+ eslint.txt                              |   10 +
+ fetchDescriptions.mjs                   |   16 +
+ index.html                              |   20 +
+ lint.json                               |    1 +
+ lint_output.txt                         |  Bin 0 -> 6300 bytes
+ lint_report.json                        |  Bin 0 -> 54182 bytes
+ package-lock.json                       | 6563 +++++++++++++++++++++++++++++++
+ package.json                            |   44 +
+ postcss.config.js                       |    6 +
+ public/data/data.json                   |   51 +
+ public/robots.txt                       |    4 +
+ public/sitemap.xml                      |   15 +
+ public/vite.svg                         |    1 +
+ src/App.jsx                             |   62 +
+ src/components/Archive.jsx              |  320 ++
+ src/components/Bio.jsx                  |   41 +
+ src/components/Choice.jsx               |   86 +
+ src/components/Footer.jsx               |   38 +
+ src/components/Hero.jsx                 |   43 +
+ src/components/Navbar.jsx               |  134 +
+ src/components/Request.jsx              |  216 +
+ src/data/videos.js                      |  360 ++
+ src/i18n.js                             |   27 +
+ src/index.css                           |   39 +
+ src/locales/en.json                     |   90 +
+ src/locales/it.json                     |   90 +
+ src/locales/tr.json                     |   90 +
+ src/main.jsx                            |   14 +
+ tailwind.config.js                      |   46 +
+ updater.mjs                             |   63 +
+ vite.config.js                          |    7 +
+ 38 files changed, 8647 insertions(+)

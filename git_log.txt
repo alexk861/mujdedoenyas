@@ -1,0 +1,88 @@
+﻿commit cc3895a09eea56153e346db40234c8e09f518e1f
+Author: aleksi <k.alexi@gmail.com>
+Date:   Thu Apr 2 12:29:34 2026 +0300
+
+    go
+
+ stat.txt                             |   32 +
+ status.txt                           |  Bin 0 -> 448 bytes
+ status8.txt                          |   10 +
+ web-app/.gitignore                   |   39 +
+ web-app/.npmrc                       |    1 +
+ web-app/README.md                    |    8 +
+ web-app/api/contact.js               |  138 +
+ web-app/api/lib/tag-classifier.js    |  167 +
+ web-app/api/sync.js                  |  300 ++
+ web-app/api/youtube.js               |   57 +
+ web-app/eslint.config.js             |   39 +
+ web-app/generate_sitemap.js          |   33 +
+ web-app/index.html                   |   31 +
+ web-app/package-lock.json            | 8145 ++++++++++++++++++++++++++++++++++
+ web-app/package.json                 |   46 +
+ web-app/postcss.config.js            |    6 +
+ web-app/public/data/data.json        |   51 +
+ web-app/public/manifest.json         |   21 +
+ web-app/public/musicnote.png         |  Bin 0 -> 738816 bytes
+ web-app/public/robots.txt            |    4 +
+ web-app/public/sitemap.xml           |  749 ++++
+ web-app/public/vite.svg              |    1 +
+ web-app/src/App.jsx                  |   79 +
+ web-app/src/components/Archive.jsx   |  321 ++
+ web-app/src/components/Bio.jsx       |   41 +
+ web-app/src/components/Choice.jsx    |   86 +
+ web-app/src/components/Footer.jsx    |   38 +
+ web-app/src/components/Hero.jsx      |   43 +
+ web-app/src/components/Navbar.jsx    |  134 +
+ web-app/src/components/Request.jsx   |  239 +
+ web-app/src/data/videos.js           |   31 +
+ web-app/src/data/videos.json         |  371 ++
+ web-app/src/i18n.js                  |   27 +
+ web-app/src/index.css                |   39 +
+ web-app/src/locales/en - Copy.json   |   90 +
+ web-app/src/locales/en.json          |  162 +
+ web-app/src/locales/es.json          |  158 +
+ web-app/src/locales/it - Copy.json   |   90 +
+ web-app/src/locales/it.json          |  162 +
+ web-app/src/locales/tr - Copy.json   |   90 +
+ web-app/src/locales/tr.json          |  162 +
+ web-app/src/main.jsx                 |   14 +
+ web-app/tailwind.config.js           |   46 +
+ web-app/updater.mjs                  |   63 +
+ web-app/vercel.json                  |    8 +
+ web-app/vercel_out.txt               |  Bin 0 -> 7812 bytes
+ web-app/vite.config.js               |   24 +
+ web-app/web-app/src/data/videos.json |  371 ++
+ 48 files changed, 12767 insertions(+)
+
+commit f1396d52fcee75470a41857a63d254d6e8ca90e1
+Author: aleksi <k.alexi@gmail.com>
+Date:   Thu Apr 2 12:19:53 2026 +0300
+
+    go
+
+ .../console-2026-03-29T09-09-51-457Z.log           |   9 +
+ .../console-2026-03-29T09-11-26-047Z.log           |  43 +++
+ .../console-2026-03-29T09-16-29-808Z.log           |  42 +++
+ .../console-2026-03-29T10-10-15-808Z.log           |  12 +
+ .../console-2026-03-29T19-18-59-589Z.log           |  30 ++
+ .playwright-mcp/page-2026-03-29T09-08-38-510Z.png  | Bin 0 -> 371178 bytes
+ .playwright-mcp/page-2026-03-29T09-09-19-215Z.png  | Bin 0 -> 371178 bytes
+ .playwright-mcp/page-2026-03-29T09-09-59-098Z.png  | Bin 0 -> 371178 bytes
+ .playwright-mcp/page-2026-03-29T09-11-34-854Z.png  | Bin 0 -> 560909 bytes
+ DESIGN.md                                          |  26 ++
+ StitchScreens/digital_piano_salon.html             | 313 +++++++++++++++++++++
+ StitchScreens/digital_piano_salon_screenshot.png   | Bin 0 -> 21828 bytes
+ StitchScreens/listeners_choice.html                | 293 +++++++++++++++++++
+ StitchScreens/listeners_choice_screenshot.png      | Bin 0 -> 22587 bytes
+ StitchScreens/performance_archive.html             | 249 ++++++++++++++++
+ StitchScreens/performance_archive_screenshot.png   | Bin 0 -> 112083 bytes
+ archive_active_final.png                           | Bin 0 -> 473451 bytes
+ archive_mobile.png                                 | Bin 0 -> 74906 bytes
+ archive_mobile_player.png                          | Bin 0 -> 200376 bytes
+ archive_real_videos.png                            | Bin 0 -> 485635 bytes
+ mobile_375_top.png                                 | Bin 0 -> 234552 bytes
+ mobile_view.png                                    | Bin 0 -> 606515 bytes
+ mobile_with_hamburger.png                          | Bin 0 -> 237972 bytes
+ recent.txt                                         | Bin 0 -> 34316258 bytes
+ scan_tr_hero.png                                   | Bin 0 -> 1063561 bytes
+ 25 files changed, 1017 insertions(+)
