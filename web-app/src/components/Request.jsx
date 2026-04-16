@@ -174,7 +174,7 @@ export default function Request({ data }) {
                 href={`https://www.youtube.com/watch?v=${req.videoId}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group block border border-on-surface/20 p-6 transition-all duration-300 hover:bg-primary hover:border-primary"
+                className="group flex flex-col border border-on-surface/20 p-6 transition-all duration-300 hover:bg-primary hover:border-primary"
               >
                 <div className="relative aspect-video bg-surface-container-high mb-6 overflow-hidden">
                   <img
@@ -185,7 +185,7 @@ export default function Request({ data }) {
                   <div className="absolute inset-0 bg-on-surface/10 group-hover:bg-transparent transition-colors duration-500 pointer-events-none"></div>
                 </div>
 
-                <div className="flex flex-col h-full">
+                <div className="flex flex-col flex-1">
                   <span className="text-xs font-label tracking-widest text-on-surface-variant uppercase mb-3 group-hover:text-on-primary/70 transition-colors">
                     {data.requestedByLabel} {req.requestedBy}
                   </span>
@@ -193,7 +193,7 @@ export default function Request({ data }) {
                     {req.title}
                   </h4>
                   
-                  <div className="mt-6 flex items-center text-on-surface-variant text-xs font-label tracking-widest uppercase group-hover:text-on-primary transition-colors">
+                  <div className="mt-auto pt-6 flex items-center text-on-surface-variant text-xs font-label tracking-widest uppercase group-hover:text-on-primary transition-colors">
                     <span>{data.watchPerformance}</span>
                     <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="square" strokeLinejoin="miter" strokeWidth="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3" />
