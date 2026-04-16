@@ -1,0 +1,4 @@
+# Dependencies for generate_video_schema.py
+# Install: pip install -r scripts/requirements.txt
+google-api-python-client>=2.100.0
+python-dotenv>=1.0.0

@@ -127,6 +127,9 @@ async function fetchAllYouTubeVideos(apiKey) {
       views: formatViews(details.viewCount),
       date: formatDate(item.snippet.publishedAt),
       duration: formatDuration(details.duration),
+      // Raw ISO values for structured data / VideoObject schema
+      isoDuration: details.duration,                          // e.g. "PT4M29S"
+      publishedAt: item.snippet.publishedAt.split('T')[0],    // e.g. "2026-03-15"
       description: item.snippet.description || '',
       // Tag will be assigned by the classifier
       _rawDescription: item.snippet.description || '',
@@ -331,6 +334,8 @@ export default async function handler(req, res) {
         views: v.views,
         date: v.date,
         duration: v.duration,
+        isoDuration: v.isoDuration,       // Raw ISO 8601 for schema
+        publishedAt: v.publishedAt,       // Raw ISO date for schema
         tag,
         description: v.description,
       };

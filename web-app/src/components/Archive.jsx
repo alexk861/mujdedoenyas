@@ -97,27 +97,65 @@ export default function Archive({ data }) {
     return videos.filter((v) => v.tag === tag).length;
   };
 
+  // ── VideoObject Schema (Google Rich Results compliant) ──────────────────
   const videoObjectSchema = {
     "@context": "https://schema.org",
     "@type": "VideoObject",
     "name": current.title,
-    "description": `Piano cover of ${current.title} by Müjde Doenyas.`,
-    "thumbnailUrl": getThumbnail(current.videoId),
-    "uploadDate": (() => { try { return new Date(current.date || "2024-01-01").toISOString(); } catch { return "2024-01-01T00:00:00.000Z"; } })(),
+    "description": rawDescription
+      ? rawDescription.split('\n').filter(l => l.trim() && !l.startsWith('#')).slice(0, 3).join(' ').substring(0, 300)
+      : `Piano cover of ${current.title} by Müjde Doenyas.`,
+    "thumbnailUrl": [
+      `https://i.ytimg.com/vi/${current.videoId}/maxresdefault.jpg`,
+      getThumbnail(current.videoId),
+    ],
+    // Use raw ISO date if available, otherwise construct from display date
+    "uploadDate": current.publishedAt || "2024-01-01",
+    // ISO 8601 duration — required by Google for rich results
+    "duration": current.isoDuration || undefined,
+    "contentUrl": `https://www.youtube.com/watch?v=${current.videoId}`,
     "embedUrl": `https://www.youtube.com/embed/${current.videoId}`,
+    "interactionStatistic": {
+      "@type": "InteractionCounter",
+      "interactionType": { "@type": "WatchAction" },
+      "userInteractionCount": current.views ? current.views.replace(/[KM]/g, m => m === 'K' ? '000' : '000000').replace('.', '') : "0"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Müjde Doenyas",
+      "url": "https://www.mujdedoenyas.com",
+      "sameAs": [
+        "https://www.youtube.com/@mujdedoenyas",
+        "https://www.instagram.com/mujdedoenyas"
+      ]
+    },
     "publisher": {
       "@type": "Person",
       "name": "Müjde Doenyas",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.mujdedoenyas.com/og-image.jpg"
-      }
-    }
+      "url": "https://www.mujdedoenyas.com"
+    },
+    "inLanguage": "en",
+    "isFamilyFriendly": true
   };
+
+  // Remove undefined keys for clean JSON-LD output
+  Object.keys(videoObjectSchema).forEach(key => {
+    if (videoObjectSchema[key] === undefined) delete videoObjectSchema[key];
+  });
   
   return (
     <section className="py-16 bg-surface" id="archive">
       <Helmet>
+        {/* ── Dynamic OG meta tags for the active video ── */}
+        <meta property="og:video" content={`https://www.youtube.com/embed/${current.videoId}`} />
+        <meta property="og:video:type" content="text/html" />
+        <meta property="og:video:width" content="1280" />
+        <meta property="og:video:height" content="720" />
+        <meta property="og:title" content={`${current.title} | Müjde Doenyas Piano Cover`} />
+        <meta property="og:image" content={`https://i.ytimg.com/vi/${current.videoId}/maxresdefault.jpg`} />
+        <meta property="og:image:width" content="1280" />
+        <meta property="og:image:height" content="720" />
+        {/* ── VideoObject structured data ── */}
         <script type="application/ld+json">{JSON.stringify(videoObjectSchema)}</script>
       </Helmet>
       <div className="container mx-auto px-4 md:px-8 max-w-7xl">
