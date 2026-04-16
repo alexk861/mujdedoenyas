@@ -1,4 +1,5 @@
 import { classifyVideo } from './lib/tag-classifier.js';
+import { translateNewVideoDescriptions } from './lib/translator.js';
 
 /**
  * /api/sync — Vercel Serverless Function
@@ -17,6 +18,11 @@ const CHANNEL_ID = 'UCJPSeKWHcTMJzF69bdt6G9g';
 const GITHUB_OWNER = 'alexk861';
 const GITHUB_REPO = 'mujdedoenyas';
 const FILE_PATH = 'web-app/src/data/videos.json';
+const LOCALE_PATHS = {
+  en: 'web-app/src/locales/en.json',
+  tr: 'web-app/src/locales/tr.json',
+  it: 'web-app/src/locales/it.json',
+};
 const BRANCH = 'main';
 
 // ── Helpers ────────────────────────────────────────────────────────────────────
@@ -131,11 +137,11 @@ async function fetchAllYouTubeVideos(apiKey) {
 // ── GitHub API ──────────────────────────────────────────────────────────────────
 
 /**
- * Read the current videos.json from GitHub.
- * Returns { content: parsed JSON array, sha: file SHA for updating }.
+ * Read a JSON file from GitHub.
+ * Returns { content: parsed JSON, sha: file SHA for updating }.
  */
-async function readGitHubFile(token) {
-  const url = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${FILE_PATH}?ref=${BRANCH}`;
+async function readGitHubJSON(token, filePath = FILE_PATH) {
+  const url = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${filePath}?ref=${BRANCH}`;
   const res = await fetch(url, {
     headers: {
       Authorization: `Bearer ${token}`,
@@ -144,7 +150,7 @@ async function readGitHubFile(token) {
   });
 
   if (res.status === 404) {
-    return { content: [], sha: null };
+    return { content: filePath.endsWith('.json') ? {} : [], sha: null };
   }
 
   if (!res.ok) {
@@ -160,10 +166,10 @@ async function readGitHubFile(token) {
 /**
  * Write the updated videos.json to GitHub (creates a commit).
  */
-async function writeGitHubFile(token, content, sha) {
-  const url = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${FILE_PATH}`;
+async function writeGitHubJSON(token, content, sha, filePath = FILE_PATH, message = null) {
+  const url = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${filePath}`;
   const body = {
-    message: `🎹 Sync: ${new Date().toISOString().split('T')[0]} — auto-update videos`,
+    message: message || `🎹 Sync: ${new Date().toISOString().split('T')[0]} — auto-update videos`,
     content: Buffer.from(JSON.stringify(content, null, 2) + '\n').toString('base64'),
     branch: BRANCH,
   };
@@ -188,6 +194,57 @@ async function writeGitHubFile(token, content, sha) {
   }
 
   return await res.json();
+}
+
+// ── Locale translation helper ──────────────────────────────────────────────────
+
+/**
+ * Translate descriptions for new videos and commit updated locale files.
+ */
+async function translateAndUpdateLocales(token, newVideos) {
+  if (newVideos.length === 0) return;
+
+  console.log(`[sync] Translating descriptions for ${newVideos.length} new video(s)...`);
+
+  // 1. Translate all descriptions
+  const translations = await translateNewVideoDescriptions(newVideos);
+
+  // 2. For each locale, read → inject → commit
+  for (const [lang, localePath] of Object.entries(LOCALE_PATHS)) {
+    try {
+      console.log(`[sync] Updating ${lang}.json...`);
+      const { content: locale, sha } = await readGitHubJSON(token, localePath);
+
+      // Ensure archive.videoDescriptions exists
+      if (!locale.archive) locale.archive = {};
+      if (!locale.archive.videoDescriptions) locale.archive.videoDescriptions = {};
+
+      // Inject new translations
+      let addedCount = 0;
+      for (const [videoId, translatedDesc] of Object.entries(translations[lang] || {})) {
+        if (!locale.archive.videoDescriptions[videoId]) {
+          locale.archive.videoDescriptions[videoId] = translatedDesc;
+          addedCount++;
+        }
+      }
+
+      if (addedCount > 0) {
+        await writeGitHubJSON(
+          token,
+          locale,
+          sha,
+          localePath,
+          `🌐 Sync: auto-translate ${addedCount} video description(s) → ${lang.toUpperCase()}`
+        );
+        console.log(`[sync] ✓ ${lang}.json updated with ${addedCount} new description(s)`);
+      } else {
+        console.log(`[sync] ${lang}.json — all descriptions already present, skipping`);
+      }
+    } catch (err) {
+      console.error(`[sync] Failed to update ${lang}.json:`, err.message);
+      // Don't fail the whole sync for a translation error
+    }
+  }
 }
 
 // ── Main handler ───────────────────────────────────────────────────────────────
@@ -220,7 +277,7 @@ export default async function handler(req, res) {
 
     // 4. Read current videos.json from GitHub
     console.log('[sync] Reading current videos.json from GitHub...');
-    const { content: existingVideos, sha } = await readGitHubFile(githubToken);
+    const { content: existingVideos, sha } = await readGitHubJSON(githubToken);
     console.log(`[sync] Current videos.json has ${existingVideos.length} videos`);
 
     // 5. Find new videos (not in existing list)
@@ -247,7 +304,7 @@ export default async function handler(req, res) {
       const viewsChanged = existingVideos.some((v, i) => v.views !== updatedExisting[i].views);
       if (viewsChanged) {
         console.log('[sync] No new videos, but view counts updated. Committing...');
-        await writeGitHubFile(githubToken, updatedExisting, sha);
+        await writeGitHubJSON(githubToken, updatedExisting, sha);
         return res.status(200).json({
           message: 'View counts updated',
           newVideos: 0,
@@ -282,13 +339,16 @@ export default async function handler(req, res) {
     // 8. Merge: new videos at the top (most recent first)
     const merged = [...classifiedNewVideos, ...updatedExisting];
 
-    // 9. Commit to GitHub
+    // 9. Commit videos.json to GitHub
     console.log(`[sync] Committing ${merged.length} videos to GitHub...`);
-    await writeGitHubFile(githubToken, merged, sha);
+    await writeGitHubJSON(githubToken, merged, sha);
+
+    // 10. Translate and update locale files (EN, TR, IT)
+    await translateAndUpdateLocales(githubToken, classifiedNewVideos);
 
     console.log('[sync] Done!');
     return res.status(200).json({
-      message: `Synced ${newVideos.length} new video(s)`,
+      message: `Synced ${newVideos.length} new video(s) with translations`,
       newVideos: classifiedNewVideos.map(v => ({ title: v.title, tag: v.tag })),
       totalVideos: merged.length,
     });
