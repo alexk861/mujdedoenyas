@@ -125,11 +125,12 @@ async function fetchAllYouTubeVideos(apiKey) {
       title: item.snippet.title,
       videoId,
       views: formatViews(details.viewCount),
+      rawViews: parseInt(details.viewCount, 10) || 0,
       date: formatDate(item.snippet.publishedAt),
       duration: formatDuration(details.duration),
       // Raw ISO values for structured data / VideoObject schema
-      isoDuration: details.duration,                          // e.g. "PT4M29S"
-      publishedAt: item.snippet.publishedAt.split('T')[0],    // e.g. "2026-03-15"
+      isoDuration: details.duration,                       // e.g. "PT4M29S"
+      publishedAt: item.snippet.publishedAt,              // e.g. "2026-03-15T13:10:32Z"
       description: item.snippet.description || '',
       // Tag will be assigned by the classifier
       _rawDescription: item.snippet.description || '',
@@ -295,7 +296,8 @@ export default async function handler(req, res) {
       if (yt) {
         return {
           ...v,
-          views: yt.views,           // Update view count
+          views: yt.views,           // Update formatted view count
+          rawViews: yt.rawViews,     // Update exact integer count
           description: yt.description || v.description,  // Update description
         };
       }
@@ -303,8 +305,10 @@ export default async function handler(req, res) {
     });
 
     if (newVideos.length === 0) {
-      // Still commit if view counts changed
-      const viewsChanged = existingVideos.some((v, i) => v.views !== updatedExisting[i].views);
+      // Compare raw integer counts — formatted strings like "176.1K" hide small daily changes
+      const viewsChanged = existingVideos.some((v, i) =>
+        (v.rawViews || 0) !== (updatedExisting[i].rawViews || 0)
+      );
       if (viewsChanged) {
         console.log('[sync] No new videos, but view counts updated. Committing...');
         await writeGitHubJSON(githubToken, updatedExisting, sha);
@@ -332,6 +336,7 @@ export default async function handler(req, res) {
         title: v.title,
         videoId: v.videoId,
         views: v.views,
+        rawViews: v.rawViews,
         date: v.date,
         duration: v.duration,
         isoDuration: v.isoDuration,       // Raw ISO 8601 for schema
