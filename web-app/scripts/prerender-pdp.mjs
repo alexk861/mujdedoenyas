@@ -131,16 +131,12 @@ for (const video of videos) {
     <meta name="robots" content="index, follow, max-image-preview:large, max-video-preview:-1" />
     <meta property="og:title" content="${escapeHtml(pageTitle)}" />
     <meta property="og:description" content="${escapeHtml(metaDesc)}" />
-    <meta property="og:type" content="video.other" />
+    <meta property="og:type" content="website" />
     <meta property="og:url" content="${canonicalUrl}" />
     <meta property="og:site_name" content="Müjde Doenyas" />
     <meta property="og:image" content="${thumbUrl}" />
     <meta property="og:image:width" content="1280" />
     <meta property="og:image:height" content="720" />
-    <meta property="og:video" content="https://www.youtube.com/embed/${video.videoId}" />
-    <meta property="og:video:type" content="text/html" />
-    <meta property="og:video:width" content="1280" />
-    <meta property="og:video:height" content="720" />
     <meta property="og:locale" content="tr_TR" />
     <meta property="og:locale:alternate" content="en_US" />
     <meta property="og:locale:alternate" content="it_IT" />
@@ -168,7 +164,7 @@ for (const video of videos) {
   // Replace OG tags
   html = html.replace(/<meta property="og:title" content="[^"]*"\s*\/?>/, `<meta property="og:title" content="${escapeHtml(pageTitle)}" />`);
   html = html.replace(/<meta property="og:description" content="[^"]*"\s*\/?>/, `<meta property="og:description" content="${escapeHtml(metaDesc)}" />`);
-  html = html.replace(/<meta property="og:type" content="[^"]*"\s*\/?>/, `<meta property="og:type" content="video.other" />`);
+  html = html.replace(/<meta property="og:type" content="[^"]*"\s*\/?>/, `<meta property="og:type" content="website" />`);
   html = html.replace(/<meta property="og:url" content="[^"]*"\s*\/?>/, `<meta property="og:url" content="${canonicalUrl}" />`);
   html = html.replace(/<meta property="og:image" content="[^"]*"\s*\/?>/, `<meta property="og:image" content="${thumbUrl}" />`);
 
@@ -184,10 +180,6 @@ for (const video of videos) {
     <meta property="og:site_name" content="Müjde Doenyas" />
     <meta property="og:image:width" content="1280" />
     <meta property="og:image:height" content="720" />
-    <meta property="og:video" content="https://www.youtube.com/embed/${video.videoId}" />
-    <meta property="og:video:type" content="text/html" />
-    <meta property="og:video:width" content="1280" />
-    <meta property="og:video:height" content="720" />
     <meta property="og:locale" content="tr_TR" />
     <meta property="og:locale:alternate" content="en_US" />
     <meta property="og:locale:alternate" content="it_IT" />

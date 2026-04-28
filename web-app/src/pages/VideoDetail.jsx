@@ -179,17 +179,13 @@ export default function VideoDetail() {
         {/* ── Open Graph ── */}
         <meta property="og:title" content={`${currentVideo.title} | Müjde Doenyas`} />
         <meta property="og:description" content={metaDesc} />
-        <meta property="og:type" content="video.other" />
+        <meta property="og:type" content="website" />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:site_name" content="Müjde Doenyas" />
         <meta property="og:image" content={thumbUrl} />
         <meta property="og:image:width" content="1280" />
         <meta property="og:image:height" content="720" />
         <meta property="og:image:alt" content={`${currentVideo.title} - Piano Performance by Müjde Doenyas`} />
-        <meta property="og:video" content={`https://www.youtube.com/embed/${currentVideo.videoId}`} />
-        <meta property="og:video:type" content="text/html" />
-        <meta property="og:video:width" content="1280" />
-        <meta property="og:video:height" content="720" />
         <meta property="og:locale" content={lang === 'tr' ? 'tr_TR' : lang === 'it' ? 'it_IT' : 'en_US'} />
         <meta property="og:locale:alternate" content="tr_TR" />
         <meta property="og:locale:alternate" content="en_US" />
