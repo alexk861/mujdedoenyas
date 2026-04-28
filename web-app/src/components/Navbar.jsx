@@ -1,21 +1,28 @@
 import { useTranslation } from 'react-i18next';
 import { useState, useEffect, useCallback } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
 export default function Navbar() {
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('stage');
 
+  const isHome = location.pathname === '/';
+
   const navLinks = [
-    { label: t('nav.stage'), href: '#stage', id: 'stage' },
-    { label: t('nav.archive'), href: '#archive', id: 'archive' },
-    { label: t('nav.choice'), href: '#choice', id: 'choice' },
-    { label: t('nav.request'), href: '#request', id: 'request' },
+    { label: t('nav.stage'), id: 'stage' },
+    { label: t('nav.archive'), id: 'archive' },
+    { label: t('nav.choice'), id: 'choice' },
+    { label: t('nav.request'), id: 'request' },
   ];
 
-  // Track active section with IntersectionObserver
+  // Track active section with scroll (only on homepage)
   useEffect(() => {
+    if (!isHome) return;
+
     const handleScroll = () => {
       const sectionIds = ['stage', 'archive', 'choice', 'request'];
       const scrollY = window.scrollY + 120; // offset for sticky nav
@@ -33,7 +40,22 @@ export default function Navbar() {
     handleScroll();
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [isHome]);
+
+  // Scroll to hash after navigating home
+  useEffect(() => {
+    if (isHome && location.hash) {
+      const id = location.hash.replace('#', '');
+      // Small delay to let the homepage render
+      const timer = setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+  }, [isHome, location.hash]);
 
   // Close mobile menu on resize to desktop
   useEffect(() => {
@@ -50,16 +72,37 @@ export default function Navbar() {
     return () => { document.body.style.overflow = ''; };
   }, [mobileOpen]);
 
-  const handleNavClick = useCallback((id) => {
-    setActiveSection(id);
+  const handleNavClick = useCallback((e, id) => {
+    e.preventDefault();
     setMobileOpen(false);
-  }, []);
+
+    if (isHome) {
+      // Already on homepage — just scroll to section
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+      setActiveSection(id);
+    } else {
+      // On a sub-page (e.g. PDP) — navigate home with hash
+      navigate(`/#${id}`);
+    }
+  }, [isHome, navigate]);
+
+  const handleLogoClick = useCallback((e) => {
+    e.preventDefault();
+    if (isHome) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      navigate('/');
+    }
+  }, [isHome, navigate]);
 
   return (
     <nav className="bg-slate-950/80 backdrop-blur-xl docked full-width top-0 sticky z-50">
       <div className="flex justify-between items-center w-full px-6 md:px-8 py-4 md:py-6 max-w-screen-2xl mx-auto">
         {/* Logo */}
-        <a href="#" className="text-xl md:text-2xl font-serif italic text-primary tracking-tighter">
+        <a href="/" onClick={handleLogoClick} className="text-xl md:text-2xl font-serif italic text-primary tracking-tighter">
           {t('nav.title')}
         </a>
 
@@ -68,16 +111,16 @@ export default function Navbar() {
           {navLinks.map((link) => (
             <a
               key={link.id}
-              href={link.href}
-              onClick={() => handleNavClick(link.id)}
+              href={`/#${link.id}`}
+              onClick={(e) => handleNavClick(e, link.id)}
               className={`font-serif italic tracking-tight text-lg transition-all duration-300 hover:scale-105 relative pb-1 ${
-                activeSection === link.id
+                isHome && activeSection === link.id
                   ? 'text-primary font-semibold'
                   : 'text-on-surface-variant hover:text-primary'
               }`}
             >
               {link.label}
-              {activeSection === link.id && (
+              {isHome && activeSection === link.id && (
                 <span className="absolute bottom-0 left-0 right-0 h-[1.5px] bg-primary/50" />
               )}
             </a>
@@ -116,10 +159,10 @@ export default function Navbar() {
           {navLinks.map((link) => (
             <a
               key={link.id}
-              href={link.href}
-              onClick={() => handleNavClick(link.id)}
+              href={`/#${link.id}`}
+              onClick={(e) => handleNavClick(e, link.id)}
               className={`font-serif italic text-lg py-3 px-2 transition-all duration-200 ${
-                activeSection === link.id
+                isHome && activeSection === link.id
                   ? 'text-primary bg-primary/5 font-semibold'
                   : 'text-on-surface-variant hover:text-primary hover:bg-slate-900/50'
               }`}
