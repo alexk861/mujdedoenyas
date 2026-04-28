@@ -2,13 +2,11 @@ import { useEffect } from 'react';
 import { Toaster } from 'sonner';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Bio from './components/Bio';
-import Archive from './components/Archive';
-import Choice from './components/Choice';
-import Request from './components/Request';
 import Footer from './components/Footer';
+import Home from './pages/Home';
+import VideoDetail from './pages/VideoDetail';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -64,13 +62,10 @@ function App() {
       </Helmet>
       <Toaster position="bottom-right" theme="dark" />
       <Navbar />
-      <main>
-        <Hero data={t('hero', { returnObjects: true })} />
-        <Bio data={t('bio', { returnObjects: true })} />
-        <Archive data={t('archive', { returnObjects: true })} />
-        <Choice data={t('choices', { returnObjects: true })} />
-        <Request data={t('request', { returnObjects: true })} />
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/video/:slug" element={<VideoDetail />} />
+      </Routes>
       <Footer data={t('footer', { returnObjects: true })} />
     </div>
   );

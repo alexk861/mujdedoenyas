@@ -159,5 +159,22 @@
   "seo": {
     "title": "Müjde Doenyas | Piano Covers & Classical Music",
     "description": "Breathtaking acoustic piano covers of classical pieces, epic film soundtracks, and timeless pop songs by Müjde Doenyas."
+  },
+  "pdp": {
+    "notFound": "Video not found",
+    "returnHome": "Return to Home",
+    "views": "Views",
+    "likes": "Likes",
+    "narrative": "The Narrative",
+    "enjoyPerformance": "Enjoy this performance of",
+    "details": "Details",
+    "noDetails": "No additional details provided.",
+    "community": "Community",
+    "joinInnerCircle": "Join the Inner Circle",
+    "subscribeDesc": "You can subscribe to our YouTube channel to join our musical journey and be among the first to watch new recordings and performances.",
+    "subscribeButton": "Subscribe to Mujde Doenyas",
+    "similarPerformances": "Similar Performances",
+    "relatedRecitals": "Related Recitals",
+    "viewAllArchive": "View All Archive"
   }
 }

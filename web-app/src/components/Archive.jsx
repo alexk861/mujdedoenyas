@@ -1,5 +1,6 @@
 import { Play, X, Clock, Eye, ExternalLink } from 'lucide-react';
 import { useState, useRef, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
@@ -37,10 +38,33 @@ const parseDescription = (desc) => {
   };
 };
 
+const formatVideoUploadDate = (value) => {
+  if (!value || typeof value !== 'string') return null;
+
+  const trimmed = value.trim();
+
+  if (/^\d{4}-\d{2}-\d{2}$/.test(trimmed)) {
+    return `${trimmed}T00:00:00Z`;
+  }
+
+  if (/^\d{4}-\d{2}-\d{2}T/.test(trimmed)) {
+    if (/[zZ]$/.test(trimmed) || /[+-]\d{2}:\d{2}$/.test(trimmed)) {
+      return trimmed;
+    }
+    return `${trimmed}Z`;
+  }
+
+  const parsed = new Date(trimmed);
+  if (Number.isNaN(parsed.getTime())) return null;
+
+  return parsed.toISOString();
+};
+
 export default function Archive({ data }) {
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
   const [activeVideo, setActiveVideo] = useState(0);
-  const [isEmbedded, setIsEmbedded] = useState(false);
+  const [isEmbedded, setIsEmbedded] = useState(true);
   const [visibleCount, setVisibleCount] = useState(window.innerWidth >= 1024 ? 24 : 12);
   const [activeTag, setActiveTag] = useState('all');
   const listRef = useRef(null);
@@ -57,16 +81,14 @@ export default function Archive({ data }) {
   const handlePlay = () => setIsEmbedded(true);
 
   const handleSelectVideo = (index) => {
-    // Map filtered index back to the video
-    setActiveVideo(index);
-    setIsEmbedded(false);
+    navigate(`/video/${filteredVideos[index].slug}`);
   };
 
   const handleTagChange = (tag) => {
     setActiveTag(tag);
     setVisibleCount(window.innerWidth >= 1024 ? 24 : 12);
     setActiveVideo(0);
-    setIsEmbedded(false);
+    setIsEmbedded(true);
   };
 
   const loadMore = () => {
@@ -109,8 +131,8 @@ export default function Archive({ data }) {
       `https://i.ytimg.com/vi/${current.videoId}/maxresdefault.jpg`,
       getThumbnail(current.videoId),
     ],
-    // Use raw ISO date if available, otherwise construct from display date
-    "uploadDate": current.publishedAt || "2024-01-01",
+    // Always emit a timezone-aware ISO 8601 datetime for Google VideoObject.
+    "uploadDate": formatVideoUploadDate(current.publishedAt) || "2024-01-01T00:00:00Z",
     // ISO 8601 duration — required by Google for rich results
     "duration": current.isoDuration || undefined,
     "contentUrl": `https://www.youtube.com/watch?v=${current.videoId}`,
@@ -207,13 +229,20 @@ export default function Archive({ data }) {
           <div className="lg:col-span-2">
             <div className="relative aspect-video bg-surface-container overflow-hidden">
               {isEmbedded ? (
-                <iframe
-                  src={`https://www.youtube.com/embed/${current.videoId}?autoplay=1&rel=0`}
-                  title={current.title}
-                  className="absolute inset-0 w-full h-full"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
+                <>
+                  <iframe
+                    src={`https://www.youtube.com/embed/${current.videoId}?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0`}
+                    title={current.title}
+                    className="absolute inset-0 w-full h-full pointer-events-none"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                  <div 
+                    className="absolute inset-0 w-full h-full cursor-pointer z-10"
+                    onClick={() => navigate(`/video/${current.slug}`)}
+                    title={t('archive.ui.viewDetails', { defaultValue: 'View Details' })}
+                  />
+                </>
               ) : (
                 <div className="group cursor-pointer w-full h-full" onClick={handlePlay}>
                   <img

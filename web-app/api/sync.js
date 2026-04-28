@@ -64,6 +64,32 @@ function formatDuration(isoDuration) {
   return `${totalMin}:${String(s).padStart(2, '0')}`;
 }
 
+/**
+ * Clean the title to make a nice slug, handling Turkish characters
+ */
+function slugify(text) {
+  const trMap = {
+    'ç': 'c', 'Ç': 'c',
+    'ğ': 'g', 'Ğ': 'g',
+    'ı': 'i', 'I': 'i', 'İ': 'i',
+    'ö': 'o', 'Ö': 'o',
+    'ş': 's', 'Ş': 's',
+    'ü': 'u', 'Ü': 'u'
+  };
+
+  return text
+    .toString()
+    .replace(/[çÇğĞıIİöÖşŞüÜ]/g, match => trMap[match])
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/[^\w\-]+/g, '')
+    .replace(/\-\-+/g, '-')
+    .replace(/^-+/, '')
+    .replace(/-+$/, '');
+}
+
 // ── YouTube API ────────────────────────────────────────────────────────────────
 
 /**
@@ -110,6 +136,7 @@ async function fetchAllYouTubeVideos(apiKey) {
       for (const v of vData.items) {
         videoDetails[v.id] = {
           viewCount: v.statistics?.viewCount || '0',
+          likeCount: v.statistics?.likeCount || '0',
           duration: v.contentDetails?.duration || 'PT0S',
         };
       }
@@ -119,13 +146,15 @@ async function fetchAllYouTubeVideos(apiKey) {
   // 4. Combine into our schema
   return allItems.map(item => {
     const videoId = item.snippet.resourceId.videoId;
-    const details = videoDetails[videoId] || { viewCount: '0', duration: 'PT0S' };
+    const details = videoDetails[videoId] || { viewCount: '0', likeCount: '0', duration: 'PT0S' };
 
     return {
       title: item.snippet.title,
       videoId,
+      slug: slugify(item.snippet.title),
       views: formatViews(details.viewCount),
       rawViews: parseInt(details.viewCount, 10) || 0,
+      likes: details.likeCount,
       date: formatDate(item.snippet.publishedAt),
       duration: formatDuration(details.duration),
       // Raw ISO values for structured data / VideoObject schema
@@ -296,8 +325,10 @@ export default async function handler(req, res) {
       if (yt) {
         return {
           ...v,
+          slug: yt.slug,             // Update slug to ensure consistency
           views: yt.views,           // Update formatted view count
           rawViews: yt.rawViews,     // Update exact integer count
+          likes: yt.likes,           // Update likes
           description: yt.description || v.description,  // Update description
         };
       }
@@ -335,8 +366,10 @@ export default async function handler(req, res) {
       return {
         title: v.title,
         videoId: v.videoId,
+        slug: v.slug,
         views: v.views,
         rawViews: v.rawViews,
+        likes: v.likes,
         date: v.date,
         duration: v.duration,
         isoDuration: v.isoDuration,       // Raw ISO 8601 for schema

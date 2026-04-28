@@ -159,5 +159,22 @@
   "seo": {
     "title": "Müjde Doenyas | Cover per Pianoforte e Musica Classica",
     "description": "Incredibili cover per pianoforte acustico di brani classici, epiche colonne sonore di film e canzoni pop senza tempo di Müjde Doenyas."
+  },
+  "pdp": {
+    "notFound": "Video non trovato",
+    "returnHome": "Ritorna alla Home",
+    "views": "visualizzazioni",
+    "likes": "mi piace",
+    "narrative": "La Narrazione",
+    "enjoyPerformance": "Goditi questa esibizione di",
+    "details": "Dettagli",
+    "noDetails": "Nessun dettaglio aggiuntivo fornito.",
+    "community": "Comunità",
+    "joinInnerCircle": "Unisciti alla Cerchia Ristretta",
+    "subscribeDesc": "Puoi iscriverti al nostro canale YouTube per unirti al nostro viaggio musicale e guardare in anteprima nuove registrazioni e performance.",
+    "subscribeButton": "Iscriviti a Mujde Doenyas",
+    "similarPerformances": "Esibizioni Simili",
+    "relatedRecitals": "Recital Correlati",
+    "viewAllArchive": "Visualizza Tutto l'Archivio"
   }
 }

@@ -159,5 +159,22 @@
   "seo": {
     "title": "Müjde Doenyas | Piyano Aranjmanları ve Klasik Müzik",
     "description": "Müjde Doenyas'tan klasik eserlerin, unutulmaz film müziklerinin ve zamansız pop şarkılarının nefes kesici akustik piyano uyarlamaları."
+  },
+  "pdp": {
+    "notFound": "Video bulunamadı",
+    "returnHome": "Ana Sayfaya Dön",
+    "views": "görüntülenme",
+    "likes": "beğeni",
+    "narrative": "Hikaye",
+    "enjoyPerformance": "Bu performansın keyfini çıkarın:",
+    "details": "Detaylar",
+    "noDetails": "Ek detay sağlanmadı.",
+    "community": "Topluluk",
+    "joinInnerCircle": "Yakın Çevreye Katılın",
+    "subscribeDesc": "Müzikal yolculuğumuza ortak olmak, yeni kayıtları ve performansları ilk izleyenlerden olmak için YouTube kanalımıza abone olabilirsiniz",
+    "subscribeButton": "Mujde Doenyas'a Abone Ol",
+    "similarPerformances": "Benzer Performanslar",
+    "relatedRecitals": "İlgili Resitaller",
+    "viewAllArchive": "Tüm Arşivi Görüntüle"
   }
 }
