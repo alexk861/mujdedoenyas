@@ -108,7 +108,7 @@ export default function VideoDetail() {
         "uploadDate": uploadDate,
         ...(currentVideo.isoDuration && { "duration": currentVideo.isoDuration }),
         "contentUrl": `https://www.youtube.com/watch?v=${currentVideo.videoId}`,
-        "embedUrl": `https://www.youtube.com/embed/${currentVideo.videoId}`,
+        "embedUrl": `https://www.youtube.com/embed/${currentVideo.videoId}?autoplay=1&rel=0`,
         "genre": currentVideo.tag === 'classical' ? 'Classical' : currentVideo.tag === 'turkish' ? 'Turkish Classical' : 'Film Soundtrack',
         "interactionStatistic": [
           {

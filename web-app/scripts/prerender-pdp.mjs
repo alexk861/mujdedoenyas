@@ -84,7 +84,7 @@ for (const video of videos) {
         "uploadDate": uploadDate,
         ...(video.isoDuration && { "duration": video.isoDuration }),
         "contentUrl": `https://www.youtube.com/watch?v=${video.videoId}`,
-        "embedUrl": `https://www.youtube.com/embed/${video.videoId}`,
+        "embedUrl": `https://www.youtube.com/embed/${video.videoId}?autoplay=1&rel=0`,
         "interactionStatistic": [
           {
             "@type": "InteractionCounter",
