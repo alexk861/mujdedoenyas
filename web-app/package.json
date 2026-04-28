@@ -7,6 +7,7 @@
     "dev": "vite",
     "prebuild": "node generate_sitemap.js",
     "build": "vite build",
+    "postbuild": "node scripts/prerender-pdp.mjs",
     "lint": "eslint .",
 
     "preview": "vite preview"

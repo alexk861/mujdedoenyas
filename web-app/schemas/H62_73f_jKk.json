@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas - Rüya (Barış Manço)-piyano",
+  "description": "Şarkı: Rüya Beste: Barış Manço Düzenleme: Vüsal Namazlı Tablo: Zihniye Aral (el işi işlenmiş goblen)",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/H62_73f_jKk/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/H62_73f_jKk/hqdefault.jpg"
+  ],
+  "uploadDate": "2022-10-10T07:40:54Z",
+  "duration": "PT3M24S",
+  "contentUrl": "https://www.youtube.com/watch?v=H62_73f_jKk",
+  "embedUrl": "https://www.youtube.com/embed/H62_73f_jKk",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 1883
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true,
+  "keywords": "piano, piano music, piyano müzik, piyano fon müzikleri, piyano çalma, piyano şarkısı, piano music relaxing, relaxing piano music, piano tutorial, piano tutorials, piano cover, piano covers, piano amelie, love story piano, mozart piano"
+}

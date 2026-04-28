@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas - Can’t Help Falling in Love-piano",
+  "description": "“Can’t Help Falling in Love” is recorded by ELVIS PRESLEY for the album “Blue Hawaii” (1961) It is still Elvis’ most popular “love song”. Written by:  George David Weiss Hugo Peretti Luigi Creatore Pianocover by: Francesco Parrino Digital Art by:   AliMurat Susuz",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/XuUXLEY0538/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/XuUXLEY0538/hqdefault.jpg"
+  ],
+  "uploadDate": "2023-12-22T14:11:44Z",
+  "duration": "PT3M46S",
+  "contentUrl": "https://www.youtube.com/watch?v=XuUXLEY0538",
+  "embedUrl": "https://www.youtube.com/embed/XuUXLEY0538",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 35211
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true,
+  "keywords": "piano, piano music, piyano müzik, piyano fon müzikleri, piyano çalma, piyano şarkısı, piano music relaxing, relaxing piano music, piano tutorial, piano tutorials, piano cover, piano covers, piano amelie, love story piano, mozart piano"
+}

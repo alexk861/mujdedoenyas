@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas - Asturias(Leyenda) -piano",
+  "description": "Asturias is a musical work by the Spanish composer and pianist Isaac Albeniz( 1860-1909).It was originally written for the piano and is the most frequently performed work of Albeniz. Digital Art: Ali Murat Susuz",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/ORtD2ej-MJw/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/ORtD2ej-MJw/hqdefault.jpg"
+  ],
+  "uploadDate": "2024-01-12T13:08:53Z",
+  "duration": "PT6M31S",
+  "contentUrl": "https://www.youtube.com/watch?v=ORtD2ej-MJw",
+  "embedUrl": "https://www.youtube.com/embed/ORtD2ej-MJw",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 5555
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true,
+  "keywords": "piano, piano music, piyano müzik, piyano fon müzikleri, piyano çalma, piyano şarkısı, piano music relaxing, relaxing piano music, piano tutorial, piano tutorials, piano cover, piano covers, piano amelie, love story piano, mozart piano"
+}

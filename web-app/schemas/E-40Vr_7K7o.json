@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas - Hancı(Tanju Okan)-piano",
+  "description": "Toccata- Paul Mauriat Arranged for piano by Slava Makovsky Piyano Şarkıları Piyano solo Piyano fon müziği Piyano akustik Piayano Tanju Okan Piano solo Piano songs Piano covers",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/E-40Vr_7K7o/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/E-40Vr_7K7o/hqdefault.jpg"
+  ],
+  "uploadDate": "2022-01-18T07:09:17Z",
+  "duration": "PT2M27S",
+  "contentUrl": "https://www.youtube.com/watch?v=E-40Vr_7K7o",
+  "embedUrl": "https://www.youtube.com/embed/E-40Vr_7K7o",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 1750
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true,
+  "keywords": "#piano"
+}

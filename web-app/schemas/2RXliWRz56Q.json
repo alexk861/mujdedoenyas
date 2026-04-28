@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas-A Toi(Joe Dassin)-piano",
+  "description": "A Toi - Joe Dassin Composer: Jean Baudlot Lyrics: Claude Lemesie, Pierre Delanoe Pianocover:Slava Makovsky",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/2RXliWRz56Q/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/2RXliWRz56Q/hqdefault.jpg"
+  ],
+  "uploadDate": "2022-04-17T05:54:38Z",
+  "duration": "PT2M12S",
+  "contentUrl": "https://www.youtube.com/watch?v=2RXliWRz56Q",
+  "embedUrl": "https://www.youtube.com/embed/2RXliWRz56Q",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 1368
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true,
+  "keywords": "piano, piano music, piyano müzik, piyano fon müzikleri, piyano çalma, piyano şarkısı, piano music relaxing, relaxing piano music, piano tutorial, piano tutorials, piano cover, piano covers, piano amelie, love story piano, mozart piano"
+}

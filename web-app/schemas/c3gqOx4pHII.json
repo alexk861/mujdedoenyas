@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas - The Heart Asks Pleasure First “The Piano”/ Michael Nyman-piano",
+  "description": "Among the film music genre there are some piano gems and this is one of them. Michael Nyman’s score to the 1993 Jane Campion film “The Piano” Composed by: Michael Nyman Painting by: Arzu Yazıcı Art Gallery: Lucafineart Video recording & Post production: Ekin Yüce",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/c3gqOx4pHII/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/c3gqOx4pHII/hqdefault.jpg"
+  ],
+  "uploadDate": "2024-06-06T13:46:40Z",
+  "duration": "PT2M43S",
+  "contentUrl": "https://www.youtube.com/watch?v=c3gqOx4pHII",
+  "embedUrl": "https://www.youtube.com/embed/c3gqOx4pHII",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 128377
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true,
+  "keywords": "piano, piano music, piyano müzik, piyano fon müzikleri, piyano çalma, piyano şarkısı, piano music relaxing, relaxing piano music, piano tutorial, piano tutorials, piano cover, piano covers, piano amelie, love story piano, mozart piano"
+}

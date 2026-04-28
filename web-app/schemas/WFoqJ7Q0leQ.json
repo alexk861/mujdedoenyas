@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas - Imagine/John Lennon-piano",
+  "description": "An immortal classic. “Imagine all the people living life in peace”🙏 Song: Imagine Composed by: John Lennon Pianocover by: Francesco Parrino Painting by: Yıldız Asangalı/Field of Flowers Art Gallery: Lucafineart Video recording & Post production: Ekin Yüce",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/WFoqJ7Q0leQ/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/WFoqJ7Q0leQ/hqdefault.jpg"
+  ],
+  "uploadDate": "2024-07-25T14:53:27Z",
+  "duration": "PT3M54S",
+  "contentUrl": "https://www.youtube.com/watch?v=WFoqJ7Q0leQ",
+  "embedUrl": "https://www.youtube.com/embed/WFoqJ7Q0leQ",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 30614
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true,
+  "keywords": "piano, piano music, piyano müzik, piyano fon müzikleri, piyano çalma, piyano şarkısı, piano music relaxing, relaxing piano music, piano tutorial, piano tutorials, piano cover, piano covers, piano amelie, love story piano, mozart piano"
+}

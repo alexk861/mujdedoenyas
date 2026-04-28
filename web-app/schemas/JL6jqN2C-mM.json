@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas - Ständchen (Schubert-Liszt)",
+  "description": "Franz Schubert  - Ständchen (Serenade) From Schwanengesang D 957 Piano transcription Franz Liszt",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/JL6jqN2C-mM/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/JL6jqN2C-mM/hqdefault.jpg"
+  ],
+  "uploadDate": "2023-11-06T13:47:28Z",
+  "duration": "PT6M31S",
+  "contentUrl": "https://www.youtube.com/watch?v=JL6jqN2C-mM",
+  "embedUrl": "https://www.youtube.com/embed/JL6jqN2C-mM",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 3121
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true,
+  "keywords": "piano, piano music, piyano müzik, piyano fon müzikleri, piyano çalma, piyano şarkısı, piano music relaxing, relaxing piano music, piano tutorial, piano tutorials, piano cover, piano covers, piano amelie, love story piano, mozart piano"
+}

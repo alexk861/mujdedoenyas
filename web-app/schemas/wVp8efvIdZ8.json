@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas - Por una Cabeza( Piano & Violin)",
+  "description": "Por una Cabeza Composed by: Carlos Gardel Arranged by: Uwe Korn Violin: Kahraman Nice Özbay Yeni videoları takip etmek isterseniz kanalıma üye olun…",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/wVp8efvIdZ8/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/wVp8efvIdZ8/hqdefault.jpg"
+  ],
+  "uploadDate": "2022-07-09T07:28:25Z",
+  "duration": "PT2M32S",
+  "contentUrl": "https://www.youtube.com/watch?v=wVp8efvIdZ8",
+  "embedUrl": "https://www.youtube.com/embed/wVp8efvIdZ8",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 981
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true,
+  "keywords": "piano, piano music, piyano müzik, piyano fon müzikleri, piyano çalma, piyano şarkısı, piano music relaxing, relaxing piano music, piano tutorial, piano tutorials, piano cover, piano covers, piano amelie, love story piano, mozart piano"
+}

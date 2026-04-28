@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas - Kol Düğmeleri (Barış Manço)-piyano",
+  "description": "Barış Manço Düzenleme: Vüsal Namazlı Piyano şarkıları Piyano solo Piyano Barış Manço Piano by VN",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/WyplLlj1-WE/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/WyplLlj1-WE/hqdefault.jpg"
+  ],
+  "uploadDate": "2022-01-22T13:19:18Z",
+  "duration": "PT2M44S",
+  "contentUrl": "https://www.youtube.com/watch?v=WyplLlj1-WE",
+  "embedUrl": "https://www.youtube.com/embed/WyplLlj1-WE",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 3600
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true
+}

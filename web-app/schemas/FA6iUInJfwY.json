@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas - Fikrimin İnce Gülü-piyano",
+  "description": "Söz ve Müzik : Muallim İsmail Hakkı Bey Düzenleme: Vüsal Namazlı",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/FA6iUInJfwY/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/FA6iUInJfwY/hqdefault.jpg"
+  ],
+  "uploadDate": "2022-02-24T16:35:49Z",
+  "duration": "PT2M25S",
+  "contentUrl": "https://www.youtube.com/watch?v=FA6iUInJfwY",
+  "embedUrl": "https://www.youtube.com/embed/FA6iUInJfwY",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 1399
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true
+}

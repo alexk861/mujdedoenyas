@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas - Now We Are Free / Gladiator- Piano",
+  "description": "These pieces are not just one of my all-time favorites but to me profound musical masterpieces. Song: Now We Are Free from the movie “Gladiator” Composed by: Hans Zimmer Pianocover by: Patrik Pietschmann Ceramic Artist :Riella Video & Post Production: Ekin Yüce Bu eserler, benim için yalnızca...",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/xlDphb8Nr7w/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/xlDphb8Nr7w/hqdefault.jpg"
+  ],
+  "uploadDate": "2024-11-09T17:00:53Z",
+  "duration": "PT2M45S",
+  "contentUrl": "https://www.youtube.com/watch?v=xlDphb8Nr7w",
+  "embedUrl": "https://www.youtube.com/embed/xlDphb8Nr7w",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 59073
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true,
+  "keywords": "now we are free / gladiator, and now we are free gladiator, now we are free gladiator piano, gladiator now we are free instrumental, now we are free gladiator soundtrack, piano, piano music, piyano müzik, piyano fon müzikleri, piyano çalma, piyano şarkısı, piano music relaxing, relaxing piano music, piano tutorial, piano tutorials"
+}

@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas - Bach / Prelude in C Major - Piano",
+  "description": "Bach is both the master of complexity and simplicity. Simple yet so beautiful. Composed by: J.S.Bach Piece: Prelude in C Major, BWV 846 Painting by: Mübin Orhon( 1924-1981) Video recording & Post production: Ekin Yüce Johann Sebastian Bach, hem karmaşıklığın hem de sadeliğin ustasıdır. Onun...",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/oRHilQp4DsM/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/oRHilQp4DsM/hqdefault.jpg"
+  ],
+  "uploadDate": "2024-09-12T13:00:57Z",
+  "duration": "PT2M",
+  "contentUrl": "https://www.youtube.com/watch?v=oRHilQp4DsM",
+  "embedUrl": "https://www.youtube.com/embed/oRHilQp4DsM",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 59818
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true,
+  "keywords": "piyano, piano music, piyano müzikleri, piyano müziği, klasik müzik piyano, piyano nota, piyano notalar, piyano şarkıları, piano tutorial, bach / prelude in c major, bach prelude 1 in c major, bach prelude in c major no 1, bach prelude in c major well tempered clavier, j s bach prelude in c major"
+}

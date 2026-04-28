@@ -67,7 +67,7 @@ for (let i = 0; i < needsBackfill.length; i += 50) {
   for (const item of data.items) {
     detailsMap.set(item.id, {
       isoDuration: item.contentDetails?.duration || 'PT0S',
-      publishedAt: item.snippet?.publishedAt?.split('T')[0] || '2024-01-01',
+      publishedAt: item.snippet?.publishedAt || '2024-01-01T00:00:00Z',
     });
   }
 

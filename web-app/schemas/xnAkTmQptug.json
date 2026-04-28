@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas - Bana Ellerini Ver-piyano",
+  "description": "Özdemir Erdoğan Düzenleme: Vüsal Namazlı Piyano Şarkıları Piyano Solo Piano by VN",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/xnAkTmQptug/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/xnAkTmQptug/hqdefault.jpg"
+  ],
+  "uploadDate": "2022-01-08T09:58:26Z",
+  "duration": "PT1M40S",
+  "contentUrl": "https://www.youtube.com/watch?v=xnAkTmQptug",
+  "embedUrl": "https://www.youtube.com/embed/xnAkTmQptug",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 4085
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true
+}

@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas - The Mermaid (İlke Karcılıoglu)-piano",
+  "description": "İlke Karcılıoğlu’dan 35 ölçülük bir prelüd.. Yeni videoları takip etmek isterseniz kanalıma üye olabilirsiniz…",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/K5EkecMSCQU/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/K5EkecMSCQU/hqdefault.jpg"
+  ],
+  "uploadDate": "2022-05-05T08:36:08Z",
+  "duration": "PT52S",
+  "contentUrl": "https://www.youtube.com/watch?v=K5EkecMSCQU",
+  "embedUrl": "https://www.youtube.com/embed/K5EkecMSCQU",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 596
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true,
+  "keywords": "piano, piano music, piyano müzik, piyano fon müzikleri, piyano çalma, piyano şarkısı, piano music relaxing, relaxing piano music, piano tutorial, piano tutorials, piano cover, piano covers, piano amelie, love story piano, mozart piano"
+}

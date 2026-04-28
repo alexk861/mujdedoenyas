@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas-Caddelerde Rüzgar(Nilüfer)-piyano",
+  "description": "Caddelerde Rüzgar Orijinal parça: Tango to Evora Müzik: Loreena McKennitt Söz: Kayahan Düzenleme: Vüsal Namazlı Yeni videoları takip etmek istiyorsanız kanalıma üye olun….",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/t64oQFBOcSs/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/t64oQFBOcSs/hqdefault.jpg"
+  ],
+  "uploadDate": "2022-04-02T07:09:16Z",
+  "duration": "PT3M29S",
+  "contentUrl": "https://www.youtube.com/watch?v=t64oQFBOcSs",
+  "embedUrl": "https://www.youtube.com/embed/t64oQFBOcSs",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 2393
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true,
+  "keywords": "piano, piano music, piyano müzik, piyano fon müzikleri, piyano çalma, piyano şarkısı, piano music relaxing, relaxing piano music, piano tutorial, piano tutorials, piano cover, piano covers, piano amelie, love story piano, mozart piano"
+}

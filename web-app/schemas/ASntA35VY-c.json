@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas - Titanic/My Heart Will Go On-piano",
+  "description": "“My Heart Will Go On” is recorded by Celine Dion and is the main theme song of the 1997 blockbuster film “Titanic”. The song became Dion’s biggest hit and is considered to be her signature song. Song: My Heart Will Go On Composed by: James Horner Pianocover: Katherine Cordova(intro) Patrik...",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/ASntA35VY-c/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/ASntA35VY-c/hqdefault.jpg"
+  ],
+  "uploadDate": "2024-05-03T13:30:08Z",
+  "duration": "PT6M19S",
+  "contentUrl": "https://www.youtube.com/watch?v=ASntA35VY-c",
+  "embedUrl": "https://www.youtube.com/embed/ASntA35VY-c",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 3371
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true,
+  "keywords": "piano, piano music, piyano müzik, piyano fon müzikleri, piyano çalma, piyano şarkısı, piano music relaxing, relaxing piano music, piano tutorial, piano tutorials, piano cover, piano covers, piano amelie, love story piano, mozart piano"
+}

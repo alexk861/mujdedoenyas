@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas - Begonvil(Sezen Aksu)-piyano",
+  "description": "Söz: Sezen Aksu Müzik: Bülent Özdemir Düzenleme: Vüsal Namazlı Yeni videoları takip etmek isterseniz kanalıma üye olun…",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/ZNywK4P_4Uw/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/ZNywK4P_4Uw/hqdefault.jpg"
+  ],
+  "uploadDate": "2022-05-27T05:55:21Z",
+  "duration": "PT2M16S",
+  "contentUrl": "https://www.youtube.com/watch?v=ZNywK4P_4Uw",
+  "embedUrl": "https://www.youtube.com/embed/ZNywK4P_4Uw",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 9148
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true,
+  "keywords": "piano, piano music, piyano müzik, piyano fon müzikleri, piyano çalma, piyano şarkısı, piano music relaxing, relaxing piano music, piano tutorial, piano tutorials, piano cover, piano covers, piano amelie, love story piano, mozart piano"
+}

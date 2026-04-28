@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas - Uzun İnce Bir Yoldayım(Aşık Veysel)-piyano",
+  "description": "Şarkı: Uzun İnce Bir Yoldayım Beste:Aşık Veysel Düzenleme:Vusal Namazlı Sanatsal Baskı:Lucagaleri Yeni videolarımı izlemek isterseniz kanalıma üye olun..",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/E02cey--IiU/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/E02cey--IiU/hqdefault.jpg"
+  ],
+  "uploadDate": "2023-11-22T13:49:28Z",
+  "duration": "PT2M14S",
+  "contentUrl": "https://www.youtube.com/watch?v=E02cey--IiU",
+  "embedUrl": "https://www.youtube.com/embed/E02cey--IiU",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 1402
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true,
+  "keywords": "piano, piano music, piyano müzik, piyano fon müzikleri, piyano çalma, piyano şarkısı, piano music relaxing, relaxing piano music, piano tutorial, piano tutorials, piano cover, piano covers, piano amelie, love story piano, mozart piano"
+}

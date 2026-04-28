@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas - Arkadaşım Eşek(Barış Manço)-piyano",
+  "description": "23 Nisan Ulusal Egemenlik ve Çocuk Bayramımız kutlu olsun🇹🇷 Küçük büyük herkesin sevgilisi Barış Manço’dan “Arkadaşım Eşek” Söz ve Müzik: Barış Manço Düzenleme: Vüsal Namazlı Yeni videoları takip etmek isterseniz kanalıma üye olun..",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/goVs9GzRhNc/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/goVs9GzRhNc/hqdefault.jpg"
+  ],
+  "uploadDate": "2022-04-23T05:51:25Z",
+  "duration": "PT2M21S",
+  "contentUrl": "https://www.youtube.com/watch?v=goVs9GzRhNc",
+  "embedUrl": "https://www.youtube.com/embed/goVs9GzRhNc",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 1168
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true,
+  "keywords": "piano, piano music, piyano müzik, piyano fon müzikleri, piyano çalma, piyano şarkısı, piano music relaxing, relaxing piano music, piano tutorial, piano tutorials, piano cover, piano covers, piano amelie, love story piano, mozart piano"
+}

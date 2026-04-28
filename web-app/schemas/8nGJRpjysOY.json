@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas- Her Şey Seninle Güzel",
+  "description": "Müzik Melih Kibar Söz Çiğdem Talu Düzenleme Vüsal Namazlı Piyano şarkıları Piyano solo Piyano ezgileri Piyano akustik Piano by VN Piano covers",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/8nGJRpjysOY/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/8nGJRpjysOY/hqdefault.jpg"
+  ],
+  "uploadDate": "2021-12-30T13:56:24Z",
+  "duration": "PT2M22S",
+  "contentUrl": "https://www.youtube.com/watch?v=8nGJRpjysOY",
+  "embedUrl": "https://www.youtube.com/embed/8nGJRpjysOY",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 3870
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true
+}

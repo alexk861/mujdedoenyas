@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas- Gençlik Marşı🇹🇷-piyano",
+  "description": "19 Mayıs Atatürk’ü Anma Gençlik ve Spor Bayramı Kutlu Olsun.🇹🇷🇹🇷🇹🇷 Gençlik Marşı ( Dağ Başını Duman Almış) Söz: Ulvi Elöve Müzik: Felix Körling Düzenleme: Vüsal Namazlı Yeni videoları takip etmek istiyorsanız kanalıma üye olun..",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/vYky84OR-Rs/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/vYky84OR-Rs/hqdefault.jpg"
+  ],
+  "uploadDate": "2022-05-19T05:04:41Z",
+  "duration": "PT1M8S",
+  "contentUrl": "https://www.youtube.com/watch?v=vYky84OR-Rs",
+  "embedUrl": "https://www.youtube.com/embed/vYky84OR-Rs",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 1278
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true,
+  "keywords": "piano, piano music, piyano müzik, piyano fon müzikleri, piyano çalma, piyano şarkısı, piano music relaxing, relaxing piano music, piano tutorial, piano tutorials, piano cover, piano covers, piano amelie, love story piano, mozart piano"
+}

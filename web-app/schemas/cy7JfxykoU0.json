@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas -Dancing Queen/ABBA-Piano",
+  "description": "Dancing Queen” is one of the timeless Europop songs by the Swedish group ABBA, released in 1976 as the lead single from their album Arrival. 🎵 Written by: Benny Anderson / Björn Ulvaeus / Stig Anderson Produced by: Benny Anderson / Björn Ulvaeus Piano Cover by: Francesco Parrino Video Recording...",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/cy7JfxykoU0/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/cy7JfxykoU0/hqdefault.jpg"
+  ],
+  "uploadDate": "2026-03-25T13:42:13Z",
+  "duration": "PT4M29S",
+  "contentUrl": "https://www.youtube.com/watch?v=cy7JfxykoU0",
+  "embedUrl": "https://www.youtube.com/embed/cy7JfxykoU0",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 176116
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true
+}

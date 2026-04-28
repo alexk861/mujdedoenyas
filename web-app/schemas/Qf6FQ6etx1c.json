@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas - Handel/Minuet in G Minor - Piano",
+  "description": "Arranged by Wilhelm Kempff (1895-1991). He was a German pianist, teacher and composer. His student “İdil Biret” has recorded a CD of his piano works. Piece: Minuet in G Minor Composed by: George Frideric Handel Arranged by: Wilhelm Kempff Painting by:  Arzu Yazıcı Art Gallery: Lucafineart Video...",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/Qf6FQ6etx1c/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/Qf6FQ6etx1c/hqdefault.jpg"
+  ],
+  "uploadDate": "2024-12-10T12:16:33Z",
+  "duration": "PT3M6S",
+  "contentUrl": "https://www.youtube.com/watch?v=Qf6FQ6etx1c",
+  "embedUrl": "https://www.youtube.com/embed/Qf6FQ6etx1c",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 58268
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true,
+  "keywords": "now we are free / gladiator, and now we are free gladiator, now we are free gladiator piano, now we are free gladiator soundtrack, piano, piano music, piyano müzik, piyano fon müzikleri, piyano çalma, piyano şarkısı, piano music relaxing, relaxing piano music, piano tutorial, piano tutorials, piano cover"
+}

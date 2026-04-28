@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas - Song from a Secret Garden(Piano & Violin)",
+  "description": "Song from a Secret Garden Artist: Secret Garden Composed by: Rolf Lovland Violin: Kahraman Nice Özbay Yeni videoları takip etmek isterseniz kanalıma üye olun…",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/nTrafog2Ft4/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/nTrafog2Ft4/hqdefault.jpg"
+  ],
+  "uploadDate": "2022-06-23T13:42:49Z",
+  "duration": "PT3M7S",
+  "contentUrl": "https://www.youtube.com/watch?v=nTrafog2Ft4",
+  "embedUrl": "https://www.youtube.com/embed/nTrafog2Ft4",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 1411
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true,
+  "keywords": "piano, piano music, piyano müzik, piyano fon müzikleri, piyano çalma, piyano şarkısı, piano music relaxing, relaxing piano music, piano tutorial, piano tutorials, piano cover, piano covers, piano amelie, love story piano, mozart piano"
+}

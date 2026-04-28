@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas - Waltz No.2 (Dmitri Shostakovich)",
+  "description": "Song : Waltz No. 2 ( from Suite for Variety Orchestra) Composer: Dmitri Shostakovich Pianocover: Slava Makovsky Painting by Başar Yücel",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/kGVHNI_rEP0/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/kGVHNI_rEP0/hqdefault.jpg"
+  ],
+  "uploadDate": "2022-08-05T08:10:26Z",
+  "duration": "PT3M56S",
+  "contentUrl": "https://www.youtube.com/watch?v=kGVHNI_rEP0",
+  "embedUrl": "https://www.youtube.com/embed/kGVHNI_rEP0",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 1925
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true,
+  "keywords": "piano, piano music, piyano müzik, piyano fon müzikleri, piyano çalma, piyano şarkısı, piano music relaxing, relaxing piano music, piano tutorial, piano tutorials, piano cover, piano covers, piano amelie, love story piano, mozart piano"
+}

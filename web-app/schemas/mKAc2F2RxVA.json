@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas - Chariots of Fire-piano",
+  "description": "The Oscar winning movie soundtrack “Chariots of Fire” was composed by Vangelis in 1981. The film is considered as one of the greatest British films ever made. Song: Chariots of Fire Composed by: Vangelis Papathanasiou Pianocover: Francesco Parrino Artistic Print: Lucafineart",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/mKAc2F2RxVA/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/mKAc2F2RxVA/hqdefault.jpg"
+  ],
+  "uploadDate": "2022-11-11T06:54:30Z",
+  "duration": "PT3M37S",
+  "contentUrl": "https://www.youtube.com/watch?v=mKAc2F2RxVA",
+  "embedUrl": "https://www.youtube.com/embed/mKAc2F2RxVA",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 1864
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true,
+  "keywords": "piano, piano music, piyano müzik, piyano fon müzikleri, piyano çalma, piyano şarkısı, piano music relaxing, relaxing piano music, piano tutorial, piano tutorials, piano cover, piano covers, piano amelie, love story piano, mozart piano"
+}

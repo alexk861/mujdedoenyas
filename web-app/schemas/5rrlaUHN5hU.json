@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas - Alla Turca ( Türk Marşı )",
+  "description": "Wolfgang Amadeus Mozart - Piano Sonata No 11 in A Major K331 Alla Turca",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/5rrlaUHN5hU/sddefault.jpg",
+    "https://i.ytimg.com/vi/5rrlaUHN5hU/hqdefault.jpg"
+  ],
+  "uploadDate": "2022-03-03T16:11:00Z",
+  "duration": "PT2M54S",
+  "contentUrl": "https://www.youtube.com/watch?v=5rrlaUHN5hU",
+  "embedUrl": "https://www.youtube.com/embed/5rrlaUHN5hU",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 1008
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true
+}

@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas - Yiğidim Aslanım(Zülfü Livaneli)-piyano",
+  "description": "18 Mart  Çanakkale Zaferi Unutulmayacak bir zafer Unutulmayacak bir tarih 🇹🇷 Yiğidim Aslanım Söz: Bedri Rahmi Eyüpoğlu Beste: Zülfi Livaneli Piyano düzenleme: Vüsal Namazlı Yeni videoları takip etmek istiyorsanız kanalıma üye olun….",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/yMy9OSBYQQw/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/yMy9OSBYQQw/hqdefault.jpg"
+  ],
+  "uploadDate": "2022-03-18T06:52:49Z",
+  "duration": "PT3M18S",
+  "contentUrl": "https://www.youtube.com/watch?v=yMy9OSBYQQw",
+  "embedUrl": "https://www.youtube.com/embed/yMy9OSBYQQw",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 6958
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true,
+  "keywords": "piano, piano music, piyano müzik, piyano fon müzikleri, piyano çalma, piyano şarkısı, piano music relaxing, relaxing piano music, piano tutorial, piano tutorials, piano cover, piano covers, piano amelie, love story piano, mozart piano"
+}

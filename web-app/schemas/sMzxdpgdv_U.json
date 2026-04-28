@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas - Come Vorrei-piano",
+  "description": "Come Vorrei - Ricchi e Poveri Wriitten by Dario Farina & Cristiano Minellono Arranged for piano by Slava Makovsky",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/sMzxdpgdv_U/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/sMzxdpgdv_U/hqdefault.jpg"
+  ],
+  "uploadDate": "2022-03-11T06:01:05Z",
+  "duration": "PT3M6S",
+  "contentUrl": "https://www.youtube.com/watch?v=sMzxdpgdv_U",
+  "embedUrl": "https://www.youtube.com/embed/sMzxdpgdv_U",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 3471
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true
+}

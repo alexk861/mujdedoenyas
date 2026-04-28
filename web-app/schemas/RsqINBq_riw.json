@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas - İzmir Marşı-piyano",
+  "description": "Bugün 30 Agustos Zaferi’nin 100. yılı. Bayramımız kutlu olsun. Sarkı: İzmir Marşı Düzenleme: Vüsal Namazlı Yeni videolarımı takip etmek isterseniz kanalıma üye olun..",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/RsqINBq_riw/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/RsqINBq_riw/hqdefault.jpg"
+  ],
+  "uploadDate": "2022-08-30T05:49:51Z",
+  "duration": "PT1M19S",
+  "contentUrl": "https://www.youtube.com/watch?v=RsqINBq_riw",
+  "embedUrl": "https://www.youtube.com/embed/RsqINBq_riw",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 1396
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true,
+  "keywords": "piano, piano music, piyano müzik, piyano fon müzikleri, piyano çalma, piyano şarkısı, piano music relaxing, relaxing piano music, piano tutorial, piano tutorials, piano cover, piano covers, piano amelie, love story piano, mozart piano"
+}

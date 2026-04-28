@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas - 10. Yıl Marşı-piyano",
+  "description": "29 Ekim Cumhuriyet bayramımız kutlu olsun🇹🇷🇹🇷 Söz:    Faruk Nafiz Çamlıbel Behçet Kemal Çağlar Beste: Cemal Reşit Rey Yeni videoları  takip etmek istiyorsanız kanalıma üye olun…",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/F1_XJS6LXek/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/F1_XJS6LXek/hqdefault.jpg"
+  ],
+  "uploadDate": "2022-10-29T06:04:17Z",
+  "duration": "PT1M39S",
+  "contentUrl": "https://www.youtube.com/watch?v=F1_XJS6LXek",
+  "embedUrl": "https://www.youtube.com/embed/F1_XJS6LXek",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 1919
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true,
+  "keywords": "piano, piano music, piyano müzik, piyano fon müzikleri, piyano çalma, piyano şarkısı, piano music relaxing, relaxing piano music, piano tutorial, piano tutorials, piano cover, piano covers, piano amelie, love story piano, mozart piano"
+}

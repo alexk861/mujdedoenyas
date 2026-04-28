@@ -109,6 +109,7 @@ export default function VideoDetail() {
         ...(currentVideo.isoDuration && { "duration": currentVideo.isoDuration }),
         "contentUrl": `https://www.youtube.com/watch?v=${currentVideo.videoId}`,
         "embedUrl": `https://www.youtube.com/embed/${currentVideo.videoId}`,
+        "genre": currentVideo.tag === 'classical' ? 'Classical' : currentVideo.tag === 'turkish' ? 'Turkish Classical' : 'Film Soundtrack',
         "interactionStatistic": [
           {
             "@type": "InteractionCounter",
@@ -121,6 +122,14 @@ export default function VideoDetail() {
             "userInteractionCount": parseInt(currentVideo.likes, 10) || 0
           }] : [])
         ],
+        ...(composer && {
+          "about": {
+            "@type": "MusicComposition",
+            "name": piece || currentVideo.title,
+            "composer": { "@type": "Person", "name": composer },
+            ...(arranger && { "arranger": { "@type": "Person", "name": arranger } })
+          }
+        }),
         "author": {
           "@type": "Person",
           "@id": "https://www.mujdedoenyas.com/#person",
@@ -134,29 +143,6 @@ export default function VideoDetail() {
         "publisher": { "@id": "https://www.mujdedoenyas.com/#person" },
         "inLanguage": lang,
         "isFamilyFriendly": true
-      },
-      // 2. MusicRecording — AEO: helps AI engines understand this is a music performance
-      {
-        "@type": "MusicRecording",
-        "@id": `${canonicalUrl}#recording`,
-        "name": piece || currentVideo.title,
-        "url": canonicalUrl,
-        ...(composer && {
-          "byArtist": { "@type": "Person", "name": "Müjde Doenyas" },
-          "recordingOf": {
-            "@type": "MusicComposition",
-            "name": piece || currentVideo.title,
-            "composer": { "@type": "Person", "name": composer },
-            ...(arranger && { "arranger": { "@type": "Person", "name": arranger } })
-          }
-        }),
-        ...(!composer && {
-          "byArtist": { "@type": "Person", "name": "Müjde Doenyas" }
-        }),
-        "duration": currentVideo.isoDuration || undefined,
-        "genre": currentVideo.tag === 'classical' ? 'Classical' : currentVideo.tag === 'turkish' ? 'Turkish Classical' : 'Film Soundtrack',
-        "datePublished": uploadDate.slice(0, 10),
-        "associatedMedia": { "@id": `${canonicalUrl}#video` }
       },
       // 3. BreadcrumbList — navigation context for Google
       {

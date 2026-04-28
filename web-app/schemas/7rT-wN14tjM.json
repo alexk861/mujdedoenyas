@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas-Hababam Sınıfı(Melih Kibar)-piyano",
+  "description": "Hüzün ve neşe birarada… Hababam Sınıfı Müzik: Melih Kibar Düzenleme: Vüsal Namazlı Melih Kibar  birçok film ve oyun müziğine de imza attı.Bunların en önemlisi 1975’te yayınlanan “ Hababam Sınıfı” filmine yaptığı müzik oldu. Bu şarkı ile Altın Portakal Film Müziği ödülünü aldı. Yeni videoları...",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/7rT-wN14tjM/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/7rT-wN14tjM/hqdefault.jpg"
+  ],
+  "uploadDate": "2022-04-11T05:45:08Z",
+  "duration": "PT2M32S",
+  "contentUrl": "https://www.youtube.com/watch?v=7rT-wN14tjM",
+  "embedUrl": "https://www.youtube.com/embed/7rT-wN14tjM",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 1937
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true,
+  "keywords": "piano, piano music, piyano müzik, piyano fon müzikleri, piyano çalma, piyano şarkısı, piano music relaxing, relaxing piano music, piano tutorial, piano tutorials, piano cover, piano covers, piano amelie, love story piano, mozart piano"
+}

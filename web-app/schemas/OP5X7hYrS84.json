@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas - Gülpembe(Barış Manço)-piyano",
+  "description": "Mujde Doenyas Piyano Şarkıları Piyano Solo Piyano Barış Manço",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/OP5X7hYrS84/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/OP5X7hYrS84/hqdefault.jpg"
+  ],
+  "uploadDate": "2021-12-19T16:03:35Z",
+  "duration": "PT1M52S",
+  "contentUrl": "https://www.youtube.com/watch?v=OP5X7hYrS84",
+  "embedUrl": "https://www.youtube.com/embed/OP5X7hYrS84",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 1965
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true
+}

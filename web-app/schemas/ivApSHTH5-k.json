@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas - Her Şeyi Yak ( Sezen Aksu)-piyano",
+  "description": "Söz: Sezen Aksu Müzik: T. Mikroutsikos Düzenleme: Vüsal Namazlı Piyano şarkıları Piyano Sezen Aksu Piyano solo",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/ivApSHTH5-k/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/ivApSHTH5-k/hqdefault.jpg"
+  ],
+  "uploadDate": "2022-02-03T17:43:05Z",
+  "duration": "PT3M",
+  "contentUrl": "https://www.youtube.com/watch?v=ivApSHTH5-k",
+  "embedUrl": "https://www.youtube.com/embed/ivApSHTH5-k",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 5316
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true
+}

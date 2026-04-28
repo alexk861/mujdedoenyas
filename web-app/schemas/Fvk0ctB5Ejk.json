@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas - A True Love for more than ten years",
+  "description": "Song: A True Love for more than ten years Composer: İlke Karcılıoğlu Dedicated to Mujde & Gabi Doenyas on their 10th wedding anniversary.",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/Fvk0ctB5Ejk/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/Fvk0ctB5Ejk/hqdefault.jpg"
+  ],
+  "uploadDate": "2022-12-27T08:36:02Z",
+  "duration": "PT2M11S",
+  "contentUrl": "https://www.youtube.com/watch?v=Fvk0ctB5Ejk",
+  "embedUrl": "https://www.youtube.com/embed/Fvk0ctB5Ejk",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 1396
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true,
+  "keywords": "piano, piano music, piyano müzik, piyano fon müzikleri, piyano çalma, piyano şarkısı, piano music relaxing, relaxing piano music, piano tutorial, piano tutorials, piano cover, piano covers, piano amelie, love story piano, mozart piano"
+}

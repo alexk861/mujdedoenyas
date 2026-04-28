@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Mujde Doenyas - Valse ( Evgeny Grinko)",
+  "description": "Song: Valse Music: Evgeny Grinko Pianocover: Vüsal Namazlı Painting by : Başar Yücel",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/JswalOBmgBc/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/JswalOBmgBc/hqdefault.jpg"
+  ],
+  "uploadDate": "2022-08-12T07:04:08Z",
+  "duration": "PT2M34S",
+  "contentUrl": "https://www.youtube.com/watch?v=JswalOBmgBc",
+  "embedUrl": "https://www.youtube.com/embed/JswalOBmgBc",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": {
+      "@type": "WatchAction"
+    },
+    "userInteractionCount": 1345
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com",
+    "sameAs": [
+      "https://www.youtube.com/@mujdedoenyas",
+      "https://www.instagram.com/mujdedoenyas"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Müjde Doenyas",
+    "url": "https://www.mujdedoenyas.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mujdedoenyas.com/#archive"
+  },
+  "inLanguage": "en",
+  "isFamilyFriendly": true,
+  "keywords": "piano, piano music, piyano müzik, piyano fon müzikleri, piyano çalma, piyano şarkısı, piano music relaxing, relaxing piano music, piano tutorial, piano tutorials, piano cover, piano covers, piano amelie, love story piano, mozart piano"
+}
