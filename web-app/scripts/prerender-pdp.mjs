@@ -140,13 +140,10 @@ for (const video of videos) {
     <meta property="og:locale" content="tr_TR" />
     <meta property="og:locale:alternate" content="en_US" />
     <meta property="og:locale:alternate" content="it_IT" />
-    <meta name="twitter:card" content="player" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="${escapeHtml(pageTitle)}" />
     <meta name="twitter:description" content="${escapeHtml(metaDesc)}" />
     <meta name="twitter:image" content="${thumbUrl}" />
-    <meta name="twitter:player" content="https://www.youtube.com/embed/${video.videoId}" />
-    <meta name="twitter:player:width" content="1280" />
-    <meta name="twitter:player:height" content="720" />
     <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>`;
 
   // Replace fallback meta tags in shell HTML
@@ -169,7 +166,7 @@ for (const video of videos) {
   html = html.replace(/<meta property="og:image" content="[^"]*"\s*\/?>/, `<meta property="og:image" content="${thumbUrl}" />`);
 
   // Replace Twitter tags
-  html = html.replace(/<meta name="twitter:card" content="[^"]*"\s*\/?>/, `<meta name="twitter:card" content="player" />`);
+  html = html.replace(/<meta name="twitter:card" content="[^"]*"\s*\/?>/, `<meta name="twitter:card" content="summary_large_image" />`);
   html = html.replace(/<meta name="twitter:title" content="[^"]*"\s*\/?>/, `<meta name="twitter:title" content="${escapeHtml(pageTitle)}" />`);
   html = html.replace(/<meta name="twitter:description" content="[^"]*"\s*\/?>/, `<meta name="twitter:description" content="${escapeHtml(metaDesc)}" />`);
 
@@ -184,9 +181,6 @@ for (const video of videos) {
     <meta property="og:locale:alternate" content="en_US" />
     <meta property="og:locale:alternate" content="it_IT" />
     <meta name="twitter:image" content="${thumbUrl}" />
-    <meta name="twitter:player" content="https://www.youtube.com/embed/${video.videoId}" />
-    <meta name="twitter:player:width" content="1280" />
-    <meta name="twitter:player:height" content="720" />
     <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
   `;
 

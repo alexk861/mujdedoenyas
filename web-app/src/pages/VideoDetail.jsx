@@ -191,14 +191,11 @@ export default function VideoDetail() {
         <meta property="og:locale:alternate" content="en_US" />
         <meta property="og:locale:alternate" content="it_IT" />
 
-        {/* ── Twitter Player Card ── */}
-        <meta name="twitter:card" content="player" />
+        {/* ── Twitter Card ── */}
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`${currentVideo.title} | Müjde Doenyas`} />
         <meta name="twitter:description" content={metaDesc} />
         <meta name="twitter:image" content={thumbUrl} />
-        <meta name="twitter:player" content={`https://www.youtube.com/embed/${currentVideo.videoId}`} />
-        <meta name="twitter:player:width" content="1280" />
-        <meta name="twitter:player:height" content="720" />
 
         {/* ── JSON-LD: VideoObject + MusicRecording + Breadcrumbs ── */}
         <script type="application/ld+json">{JSON.stringify(cleanObj(schemaGraph))}</script>
