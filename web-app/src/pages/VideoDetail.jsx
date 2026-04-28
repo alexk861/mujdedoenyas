@@ -197,8 +197,6 @@ export default function VideoDetail() {
         <meta name="twitter:description" content={metaDesc} />
         <meta name="twitter:image" content={thumbUrl} />
 
-        {/* ── JSON-LD: VideoObject + MusicRecording + Breadcrumbs ── */}
-        <script type="application/ld+json">{JSON.stringify(cleanObj(schemaGraph))}</script>
       </Helmet>
 
       {/* ═══ Video Hero ═══ */}
@@ -217,11 +215,11 @@ export default function VideoDetail() {
           {/* ── Video Meta ── */}
           <div className="mt-10 flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-outline-variant/10 pb-8">
             <div className="space-y-2">
-              <h1 className="text-4xl md:text-6xl font-display italic text-on-surface leading-tight tracking-tight" itemProp="name">
+              <h1 className="text-4xl md:text-6xl font-display italic text-on-surface leading-tight tracking-tight">
                 {currentVideo.title}
               </h1>
               <div className="flex items-center flex-wrap gap-4 font-label text-xs tracking-widest text-on-surface-variant uppercase">
-                <span><span itemProp="interactionCount">{currentVideo.views}</span> {t('pdp.views', { defaultValue: 'Views' })}</span>
+                <span><span>{currentVideo.views}</span> {t('pdp.views', { defaultValue: 'Views' })}</span>
                 {currentVideo.likes && currentVideo.likes !== "0" && (
                   <>
                     <span className="w-1 h-1 rounded-full bg-primary/40" />
@@ -229,9 +227,9 @@ export default function VideoDetail() {
                   </>
                 )}
                 <span className="w-1 h-1 rounded-full bg-primary/40" />
-                <time dateTime={uploadDate} itemProp="uploadDate">{currentVideo.date}</time>
+                <time dateTime={uploadDate}>{currentVideo.date}</time>
                 <span className="w-1 h-1 rounded-full bg-primary/40" />
-                <span className="px-2 py-0.5 bg-primary/10 text-primary rounded-sm border border-primary/20" itemProp="genre">
+                <span className="px-2 py-0.5 bg-primary/10 text-primary rounded-sm border border-primary/20">
                   {tagLabel(currentVideo.tag)}
                 </span>
               </div>
@@ -257,7 +255,7 @@ export default function VideoDetail() {
               <div className="w-8 h-px bg-primary" />
               <span className="font-label text-xs uppercase tracking-[0.2em] text-primary">{t('pdp.narrative', { defaultValue: 'The Narrative' })}</span>
             </div>
-            <div className="space-y-6 text-lg text-on-surface-variant font-light leading-relaxed whitespace-pre-wrap" itemProp="description">
+            <div className="space-y-6 text-lg text-on-surface-variant font-light leading-relaxed whitespace-pre-wrap">
               {parsed.text ? (
                 <p>{parsed.text}</p>
               ) : (
